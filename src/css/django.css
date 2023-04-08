@@ -1,0 +1,393 @@
+body {
+  background-color: #eee;
+  height: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+.projectThumbnail {
+  overflow: auto;
+  margin-bottom: 10px;
+  border-radius: 0 0 10px 10px;
+  border: 1px solid #d8d8d8;
+}
+
+.projectThumbnail img {
+  width: 100%;
+}
+
+.projectCaption {
+  text-align: center;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  padding: 0.8rem;
+}
+
+.projectCaption p {
+  width: 100%;
+  font-weight: 500;
+}
+
+ul.newsCategories {
+  list-style-type: none;
+  padding-left: 0;
+  overflow-x: hidden;
+}
+
+ul.newsCategories > li {
+  font-size: 0.85rem;
+  color: #4a5568;
+  line-height: 1.625;
+}
+
+div#newsDates {
+}
+
+div#newsDates > .card > .card-header {
+  margin: 0;
+  padding: 0;
+}
+
+div#newsDates > .card > .card-header > h2 {
+  margin: 0;
+}
+
+.newsCollapseBtn {
+  font-size: 0.85rem;
+  padding: 0;
+}
+
+ul.newsInnerCollapseList {
+  list-style: none;
+  padding-left: 20px;
+}
+
+ul.newsInnerCollapseList > li::before {
+  content: "▶";
+  position: absolute;
+  left: 20px;
+  color: #007bff;
+}
+
+ul.newsInnerCollapseList > li > div.accordion > div.card,
+ul.newsInnerCollapseList > li > div.accordion > div.card > div.card-header {
+  background-color: #eee;
+}
+
+ul.events {
+  padding-left: 20px;
+}
+
+.oral-history-content {
+  /* display: inline-block; */
+  z-index: 0;
+  background-color: grey;
+  border-radius: 5px;
+  border: 1px solid darkorchid;
+  margin: 5px;
+  padding: 5px;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: sepia(100%);
+}
+
+.oral-history-project-name {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  color: white;
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+.oral-history-byline {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.oral-history-user {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  color: white;
+}
+
+.classroom-table > tbody > tr > td {
+  text-align: center !important;
+  font-size: 0.95rem;
+}
+
+.projectThumbnail > a > img.img-fluid {
+  margin: 0;
+}
+
+/* User Card for Teachers */
+
+.user-teacher-view {
+  /* -webkit-box-shadow: 0 15px 30px 0 rgb(0 0 0 / 11%),
+    0 5px 15px 0 rgb(0 0 0 / 8%);
+  box-shadow: 0 15px 30px 0 rgb(0 0 0 / 11%), 0 5px 15px 0 rgb(0 0 0 / 8%); */
+  border: 2px solid #dedede;
+  border-radius: 20px;
+}
+
+.user-teacher-view > i.fas {
+  align-self: center;
+  padding: 1rem;
+  font-size: 3rem;
+}
+
+.user-teacher-view > div > h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.projectCheckbox > input[type="checkbox"]:hover {
+  background-color: green;
+}
+
+div.col-3 > div.form-check > div.card {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  border: 1px solid #dedede;
+}
+
+div.projectCheckbox > input[type="checkbox"] {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.username-tag {
+  color: #718096 !important;
+  line-height: 1.625;
+  margin-bottom: 1rem !important;
+  -webkit-font-smoothing: antialiased !important;
+  margin-top: 0 !important;
+}
+
+form.signUp {
+  background-color: hsl(0%, 0%, 99%);
+  border-radius: 0.3rem;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+/***************************************************/
+
+/***************************************************/
+.login-form,
+.reset-form {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 0.3rem;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.login-form footer,
+.reset-form footer {
+  background-color: #ededed;
+  padding: 0.75rem;
+}
+
+.login-form footer p strong a,
+.reset-form footer p strong a {
+  color: #454545;
+}
+
+.login-form section,
+.reset-form section {
+  padding: 1.5rem;
+}
+
+.login-submit button {
+  background-color: #0092ed;
+  font-weight: 600;
+}
+
+.reset-form > section > div.form-group > input {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/***************************************************/
+
+#signup_form {
+  border-radius: 0.375rem;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgb(0 0 0 / 10%),
+    0 1px 2px 0 rgb(0 0 0 / 6%);
+  padding: 1.5rem;
+  background-color: white;
+}
+
+form#signup_form > div.form-group > input {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+form#signup_form > div.form-group > p.figure-caption {
+  margin-top: 0.35rem;
+  font-size: small;
+}
+
+.g-recaptcha {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  color: #fff;
+  border-color: #007bff;
+  width: 100%;
+  background-color: #0092ed;
+  font-weight: 600;
+}
+
+.g-recaptcha:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+  text-decoration: none;
+}
+
+/***************************************************/
+
+.class-create {
+  font-size: small;
+  color: #718096 !important;
+  line-height: 1.625;
+  -webkit-font-smoothing: antialiased !important;
+  margin-top: 0 !important;
+}
+
+.classroom-pencil-icon {
+  font-size: medium;
+  vertical-align: top;
+}
+
+.class-fa-div {
+  width: 2rem;
+  display: inline-flex;
+  font-size: 1.25rem;
+  padding: 0.35rem;
+  margin-right: 0.5rem;
+  justify-content: center;
+}
+
+.class-nav-link {
+  transition-duration: 0.2s;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: rgba(107, 114, 128, 1);
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  position: relative;
+  text-decoration: none;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  align-items: center;
+}
+
+.class-nav-link:hover > span,
+.class-nav-link.active-nav > div > i {
+  color: rgba(17, 24, 39, 1);
+}
+
+.class-nav-link:hover {
+  text-decoration: none;
+}
+
+.class-nav-state {
+  background-color: rgba(63, 148, 223, 0.21);
+  border-radius: 0.375rem;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  opacity: 0;
+}
+
+.class-nav-link.active-nav > .class-nav-state {
+  opacity: 1;
+}
+
+.class-nav-link.active-nav > .class-nav-span-text,
+.class-nav-link.active-nav > div > i {
+  color: rgba(64, 150, 226, 1);
+}
+
+.class-nav-span-text {
+  position: relative;
+  color: rgba(107, 114, 128, 1);
+}
+
+.class-nav-title {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  margin-bottom: 0.75rem;
+  color: rgba(17, 24, 39, 1);
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.class-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.class-nav-list > li {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+}

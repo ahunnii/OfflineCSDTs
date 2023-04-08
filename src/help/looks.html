@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+	<title>Looks | CSDT</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Font Awesome CSS -->
+		<link rel="stylesheet" href="../css/fontawesome.css" />
+		<!-- Bootstrap 4 CSS -->
+		<link rel="stylesheet" href="../css/bootstrap-4.css" type="text/css" />
+		<!-- Global CSS -->
+		<link rel="stylesheet" href="../css/main.css" />
+		<!-- This tools CSS -->
+		<link rel="stylesheet" href="help.css" />
+
+		<!-- jQuery 3.4.1 -->
+		<script src="../js/jquery-3.4.1.js" type="application/javascript"></script>
+		<!-- Latest compiled and minified JavaScript for Bootstrap -->
+		<script src="../js/popper.js" type="application/javascript"></script>
+		<script src="../js/bootstrap-4.js" type="application/javascript"></script>
+		<!-- Plyr CSS -->
+		<link rel="stylesheet" href="../css/plyr.css" />
+		<!-- Video Player (plyr)-->
+		<script src="../js/plyr.js"></script>
+		<!-- Main JavaScript -->
+		<script src="../js/static-cloud.js"></script>
+		<script src="../js/main.js"></script>
+	</head>
+	<body>
+		<nav class="navbar fixed-top navbar-expand-lg navbar-dark" aria-label="Main navigation">
+			<div class="container">
+				<div class="navbar-brand">
+					<a href="#!">
+						<img src="../img/nav/nsf.gif" width="40" height="40" class="d-inline-block align-top" alt="NSF Logo" />
+					</a>
+					<a href="../index.html">
+						<img src="../img/nav/logo.svg" width="100" height="40" class="d-inline-block align-top" alt="CSDT Logo" />
+					</a>
+				</div>
+				<!-- Toggle for Mobile Navigation -->
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- Navigation Link Container -->
+				<div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+					<ul class="navbar-nav d-flex">
+						<li class="nav-item align-self-center">
+							<a class="nav-link" href="../publications.html">Publications</a>
+						</li>
+						<li class="nav-item align-self-center">
+							<a class="nav-link" href="../about.html">About</a>
+						</li>
+					</ul>
+					<ul class="navbar-nav d-flex">
+						<li class="nav-item align-self-center">
+							<span class="nav-link">Offline Version 1.0.0</span>
+						</li>
+						<li class="nav-item align-self-center" id="user-divide"></li>
+						<li class="nav-item align-self-center" id="user-help">
+							<a class="nav-link align-self-center" href="../help/index.html">
+								<i class="far fa-question-circle"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Progress Bar -->
+			<div class="progress-container fixed-top d-none d-sm-none d-lg-block">
+				<div class="progress-bar" id="myBar"></div>
+			</div>
+		</nav>
+		<!-- Mobile Navigation -->
+		<div class="fixed-top d-block d-lg-none" style="top: 65px; z-index: 1">
+			<div class="collapse" id="sectionNavigation">
+				<div class="bg-light px-4 pt-2 h-75 overflow-scroll">
+					<div id="mobileNavigation" class="navbar-nav d-block d-sm-block d-lg-none" role="mobile-container"></div>
+				</div>
+			</div>
+			<nav class="navbar navbar-dark bg-dark navbar__mobile--under" aria-label="Mobile navigation">
+				<div class="container">
+					<span>Looks</span>
+					<span class="nav-item bar align-self-center"></span>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#sectionNavigation"
+						aria-controls="sectionNavigation"
+						aria-expanded="false"
+						aria-label="Toggle tool navigation">
+						Jump to Section
+					</button>
+				</div>
+			</nav>
+		</div>
+		<main class="container">
+			<div class="row justify-content-between">
+				<div class="col-lg-2 d-none d-lg-flex">
+					<ul id="sidenav" class="list-group list-group-flush">
+						<li class="mainlink background">
+							<a href="index.html">
+								<div>Getting Started</div>
+							</a>
+						</li>
+						<li class="mainlink mainlink-extended spacer">
+							<a href="teachers.html">
+								<div>Teacher's Guide</div>
+							</a>
+						</li>
+
+						<li class="mainlink mainlink-extended spacer">
+							<a href="faq.html">
+								<div>FAQs</div>
+							</a>
+						</li>
+						<li class="mainlink spacer">
+							<a href="colors.html">
+								<div>Colors</div>
+							</a>
+						</li>
+						<li class="mainlink mainlink-extended spacer">
+							<a href="common_blocks.html">
+								<div>Common Blocks</div>
+							</a>
+						</li>
+						<li class="mainlink spacer">
+							<a href="blocks.html">
+								<div>Blocks Reference</div>
+							</a>
+						</li>
+
+						<li class="teaching_link sublink">
+							<a href="motion.html">
+								<div>Motion</div>
+							</a>
+						</li>
+						<li class="teaching_link sublink active">
+							<a href="looks.html">
+								<div>Looks</div>
+							</a>
+						</li>
+						<li class="teaching_link sublink">
+							<a href="sound.html">
+								<div>Sound</div>
+							</a>
+						</li>
+						<li class="teaching_link sublink">
+							<a href="pen.html">
+								<div>Pen</div>
+							</a>
+						</li>
+						<li class="teaching_link sublink">
+							<a href="control.html">
+								<div>Control</div>
+							</a>
+						</li>
+						<li class="teaching_link sublink">
+							<a href="sensing.html">
+								<div>Sensing</div>
+							</a>
+						</li>
+						<li class="teaching_link sublink">
+							<a href="operators.html">
+								<div>Operators</div>
+							</a>
+						</li>
+						<li class="teaching_link sublink">
+							<a href="variables.html">
+								<div>Variables</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-10">
+					<h1>Looks Blocks</h1>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/changecoloreffectby.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Change Color Effect by Block</li>
+								<li>Type: Command</li>
+								<li>
+									Description: This block adds the input parameter to the current color effect value. Drop down includes
+									color, saturation, brightness, ghost, fisheye, whirl, pixelate, mosaic, and negative effects.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/changesizeby.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Chang Size by Block</li>
+								<li>Type: Command</li>
+								<li>Description: This block adds the input parameter to the current size value in percent.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/cleargraphiceffects.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Clear Graphic Effects Block</li>
+								<li>Type: Command</li>
+								<li>Description: This block resets graphic effects to the system default values.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/fliphorizontal.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Flip Horizontal Block</li>
+								<li>Type: Command</li>
+								<li>Description: This block flips the sprite image on the horizontal axis.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/flipvertical.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Flip Vertical</li>
+								<li>Type: Command</li>
+								<li>Description: This block flips the sprite on its vertical axis.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/gobacklayers.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Go Back Layers Block</li>
+								<li>Type: Command</li>
+								<li>Description: This block changes the active layer by a relative amount from the input parameter.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/gotofrontlayer.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Go To Front Layer Block</li>
+								<li>Type: Command</li>
+								<li>
+									Description: This block changes the active layer to be the top layer. The drop down choices include
+									both front and back layers.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/hide.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Hide Block</li>
+								<li>Type: Command</li>
+								<li>Description: This block makes a sprite invisible.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/nextcostume.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Next Costume Block</li>
+								<li>Type: Command</li>
+								<li>
+									Description: This block iterates through the costume library, which is available from the Costumes
+									tab.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/reflectacrossxaxis.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Reflect Across X Axis Block</li>
+								<li>Type: Command</li>
+								<li>Description: This block reflects the sprite image relative to the X axis.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/reflectacrossyaxis.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Reflect Across Y Axis Block</li>
+								<li>Type: Command</li>
+								<li>Description: This block reflects the sprite image relative to the Y axis.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/scalebyfactorpercent.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Scale by Factor</li>
+								<li>Type: Command</li>
+								<li>
+									Description: This block scales the costume by a percentage of the current size. Use this block to
+									change the image size on the stage bigger or smaller.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/switchtocostume.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Switch To Costume Block</li>
+								<li>Type: Command</li>
+								<li>
+									Description: This block changes a sprites current costume to the costume chosen in the drop down
+									input.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/setcoloreffectto.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Set Color Effect To Block</li>
+								<li>Type: Command</li>
+								<li>
+									Description: This block sets the current color to the input value. To know what color corresponds to
+									what number, check out the <a href="colors.html">Colors</a> help page.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/setsizeto.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name:Set Size To Block</li>
+								<li>Type: Command</li>
+								<li>
+									Description: This block sets the current size of a sprite relative to it's full size. The input
+									parameter is a percentage. To make a sprite larger than its default size, use a value greater than
+									100, to make it smaller, use a value less than 100.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/show.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Show Block</li>
+								<li>Type: Command</li>
+								<li>Description: This block makes a sprite visible. Use it to un-hide a sprite.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

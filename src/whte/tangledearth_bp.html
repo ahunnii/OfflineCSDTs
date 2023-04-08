@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+	<title>IKS: Tangled Earth | CSDT</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Font Awesome CSS -->
+		<link rel="stylesheet" href="../css/fontawesome.css" />
+		<!-- Bootstrap 4 CSS -->
+		<link rel="stylesheet" href="../css/bootstrap-4.css" crossorigin="anonymous" />
+		<!-- Global CSS -->
+		<link rel="stylesheet" href="../css/main.css" />
+		<!-- Specific CSS for this tool -->
+		<link rel="stylesheet" href="template.css" />
+
+		<!-- jQuery 3.4.1 -->
+		<script src="../js/jquery-3.4.1.js" crossorigin="anonymous"></script>
+		<!-- Latest compiled and minified JavaScript for Bootstrap -->
+		<script src="../js/popper.js" crossorigin="anonymous"></script>
+		<script src="../js/bootstrap-4.js" crossorigin="anonymous"></script>
+		<!-- Main JavaScript -->
+		<script src="../js/static-cloud.js"></script>
+		<script src="../js/main.js"></script>
+	</head>
+	<body>
+		<nav class="navbar fixed-top navbar-expand-lg navbar-dark" aria-label="Main navigation">
+			<div class="container">
+				<div class="navbar-brand">
+					<a href="#!">
+						<img src="../img/nav/nsf.gif" width="40" height="40" class="d-inline-block align-top" alt="NSF Logo" />
+					</a>
+					<a href="../index.html">
+						<img src="../img/nav/logo.svg" width="100" height="40" class="d-inline-block align-top" alt="CSDT Logo" />
+					</a>
+				</div>
+				<!-- Toggle for Mobile Navigation -->
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- Navigation Link Container -->
+				<div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+					<ul class="navbar-nav d-flex">
+						<li class="nav-item align-self-center">
+							<a class="nav-link" href="../publications.html">Publications</a>
+						</li>
+						<li class="nav-item align-self-center">
+							<a class="nav-link" href="../about.html">About</a>
+						</li>
+					</ul>
+					<ul class="navbar-nav d-flex">
+						<li class="nav-item align-self-center">
+							<span class="nav-link">Offline Version 1.0.0</span>
+						</li>
+						<li class="nav-item align-self-center" id="user-divide"></li>
+						<li class="nav-item align-self-center" id="user-help">
+							<a class="nav-link align-self-center" href="../help/index.html">
+								<i class="far fa-question-circle"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Progress Bar -->
+			<div class="progress-container fixed-top d-none d-sm-none d-lg-block">
+				<div class="progress-bar" id="myBar"></div>
+			</div>
+		</nav>
+		<!-- Mobile Navigation -->
+		<div class="fixed-top d-block d-lg-none" style="top: 65px; z-index: 1">
+			<div class="collapse" id="sectionNavigation">
+				<div class="bg-light px-4 pt-2 h-75 overflow-scroll">
+					<div id="mobileNavigation" class="navbar-nav d-block d-sm-block d-lg-none" role="mobile-container"></div>
+				</div>
+			</div>
+			<nav class="navbar navbar-dark bg-dark navbar__mobile--under" aria-label="Mobile navigation">
+				<div class="container">
+					<span>IKS: Tangled Earth</span>
+					<span class="nav-item bar align-self-center"></span>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#sectionNavigation"
+						aria-controls="sectionNavigation"
+						aria-expanded="false"
+						aria-label="Toggle tool navigation">
+						Jump to Section
+					</button>
+				</div>
+			</nav>
+		</div>
+		<main class="container">
+			<div class="row justify-content-between">
+				<div class="col-lg-2 d-none d-lg-flex">
+					<ul id="sidenav" class="list-group list-group-flush">
+						<li class="mainlink background">
+							<a href="index_es.html">
+								<div>Introducción</div>
+							</a>
+						</li>
+
+						<li class="background_link sublink">
+							<a href="wovenheaven_es.html">
+								<div>SCI: Cielo Tejido</div>
+							</a>
+						</li>
+						<li class="background_link sublink">
+							<a href="tangledearth_es.html">
+								<div>SCI: Tierra Enredada</div>
+							</a>
+						</li>
+						<li class="background_link sublink">
+							<a href="beadworkalgorithm_es.html">
+								<div>Trabajo con Cuentas: Algoritmos</div>
+							</a>
+						</li>
+						<li class="background_link sublink">
+							<a href="beadworkstatistics_es.html">
+								<div>Trabajo con Cuentas: Estadística</div>
+							</a>
+						</li>
+
+						<li class="mainlink spacer">
+							<a href="../static/tutorials/index.html?name=whte-es">
+								<div>Tutorial</div>
+							</a>
+						</li>
+						<li class="mainlink spacer">
+							<a href="challenges_es.html">
+								<div>Retos 1</div>
+							</a>
+						</li>
+						<li class="mainlink spacer">
+							<a href="background2_es.html">
+								<div>Antecedentes 2</div>
+							</a>
+						</li>
+						<li class="mainlink spacer">
+							<a href="challenges2_es.html">
+								<div>Retos 2</div>
+							</a>
+						</li>
+						<li class="mainlink spacer">
+							<a href="background3_es.html">
+								<div>Antecedentes 3</div>
+							</a>
+						</li>
+						<li class="mainlink spacer">
+							<a href="challenges3_es.html">
+								<div>Retos 3</div>
+							</a>
+						</li>
+						<li class="mainlink spacer">
+							<a href="../static/csnap_pro/csdt/snap.html#open:offline/whte/software.xml">
+								<div>Software</div>
+							</a>
+						</li>
+						<li class="mainlink spacer teaching">
+							<a href="teaching_es.html">
+								<div>Materiales de enseñanza</div>
+							</a>
+						</li>
+						<li class="mainlink spacer">
+							<a href="index_bp.html">
+								<div>Em Português</div>
+							</a>
+						</li>
+						<li class="mainlink spacer">
+							<a href="index.html">
+								<div>In English</div>
+							</a>
+						</li>
+					</ul>
+					<!-- <div class="dropdown language-select">
+<button class="btn btn-secondary dropdown-toggle btn-sm" type="button" data-toggle="dropdown" aria-expanded="false">
+<i class="fas fa-language"></i> Selecciona un idioma:
+</button>
+<div class="dropdown-menu">
+<a role="button" class="dropdown-item" href="index_bp.html">Português</a>
+<a role="button" class="dropdown-item" href="index.html">English</a>
+</div>
+</div> -->
+				</div>
+				<div class="col-lg-10">
+					<h1>Sistemas de Conocimiento Indígena: Tierra enredada</h1>
+					<div class="row">
+						<div class="col-md-4">
+							<img class="img-fluid rounded" src="img/indiancorn.png" />
+						</div>
+						<div class="col-md-8">
+							<p>
+								La sección anterior explica el concepto de “Cielo Tejido”, ¿pero qué es de la “Tierra Enredada”? Los
+								dioses traviesos, quienes usualmente son representados por animales como el coyote (México) y el
+								conejillo de indias, o cuy, (Ecuador), constantemente interrumpen el orden con sorpresas impredecibles.
+								Ellos representan la idea que la imprevisibilidad de la vida sólo puede ser sobrevivido por un
+								repertorio de respuestas igualmente diverso. La idea pudo haber evolucionado junto con las maneras en
+								las que las poblaciones indígenas de las Américas enfatizaban la diversidad de sus cultivos. Si la
+								naturaleza les traía inundaciones un año y sequías al siguiente, la única manera de ayudarse ellos
+								mismos a sobrevivir era mediante a la diversidad genética de los cultivos.
+							</p>
+							<p>
+								Cuando llegaron los Europeos, estaban impresionados al encontrarse con tesoro genético: maíz, papa,
+								jitomate, pimiento, chile, vainilla, tabaco, frijoles, calabaza, mandioca, aguacate, cacahuate, nuez
+								pacana, marañón (anacardo), piña, mora azul, girasol, chocolate, y otras plantas que no conocían
+								anteriormente, de las cuales varias habían sido reproducidas por centenas de años para maximizar su
+								variedad. El concepto europeo de un Dios único, perfecto y omnipotente pudo haber sido una fuente de
+								inspiración para conceptos útiles como la optimización —como encontrar la mejor variedad de avena— pero,
+								a largo plazo, esto minimizó la variedad de cultivos.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

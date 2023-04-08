@@ -1,0 +1,4 @@
+- Vamos desenhar um triângulo.
+- Primeiro, defina sua posição y para 11.
+- Em seguida, anexe "triângulo iso".
+- Estamos adicionando 1 conta a cada 1 linha para 12 iterações na direção -y

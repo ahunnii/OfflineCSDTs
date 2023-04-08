@@ -1,0 +1,5 @@
+- Underneath the inner loop, so that it is in the outer loop (but not the inner), place a blue 'translate y by \_ stitches' and set it to -2
+- This moves the stitch down 2 stitches (our costume is two stitches tall)
+- We need to 'carriage return' the stitches, because they are currently at the right hand side of the screen. Drag in a blue 'Translate x by \_ stitches' block right underneath the block we just laid down inside the outer loop and set it to -20, the amount of stitches we just moved right across the screen. This is like returning a typewriter to the left side of the page
+- Notice that the repeat and translate x by _ stitches are the same amount. If you want, you can set up a variable to keep track of the horizontal movements so you don't have to repeat yourself. Set a variable to 20 with the orange 'set _ to _ ' and choose your new variable. Then drag in the oval variable shape into the inner loop's repeat amount and also into the 'translate x by _ stitches' block
+- Click the green flag to see our work in progress.

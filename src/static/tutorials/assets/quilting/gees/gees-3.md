@@ -1,0 +1,4 @@
+- You can actually repeat your code, using ![repeat](./img/repeat.png) Given a number of times to repeat, any other blocks inside will repeat. For Gee’s Bend quilts, you can use this to change the scaling and color of each stamp as you repeat it.
+- The ![scale by factor](./img/scalebyfactor.png) block will take the current size of the sprite, and scale it up or down by a given percentage. So for example, if you have your program scale by 90 each time, then the sprite will scale down by 90% of its current size. This gives you smaller and smaller stamps with each iteration (repeat).
+- The ![set color effect](./img/setcoloreffect.png) block allows you to change the color of your sprite. Given a value (0 to 100), you can give your sprite a new color.
+- ![colorwheel](./img/colorwheel.png)

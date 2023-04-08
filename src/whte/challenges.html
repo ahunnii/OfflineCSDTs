@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+	<title>| CSDT</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Font Awesome CSS -->
+		<link rel="stylesheet" href="../css/fontawesome.css" />
+		<!-- Bootstrap 4 CSS -->
+		<link rel="stylesheet" href="../css/bootstrap-4.css" crossorigin="anonymous" />
+		<!-- Global CSS -->
+		<link rel="stylesheet" href="../css/main.css" />
+		<!-- Specific CSS for this tool -->
+		<link rel="stylesheet" href="template.css" />
+
+		<!-- jQuery 3.4.1 -->
+		<script src="../js/jquery-3.4.1.js" crossorigin="anonymous"></script>
+		<!-- Latest compiled and minified JavaScript for Bootstrap -->
+		<script src="../js/popper.js" crossorigin="anonymous"></script>
+		<script src="../js/bootstrap-4.js" crossorigin="anonymous"></script>
+		<!-- Main JavaScript -->
+		<script src="../js/static-cloud.js"></script>
+		<script src="../js/main.js"></script>
+	</head>
+	<body>
+		<nav class="navbar fixed-top navbar-expand-lg navbar-dark" aria-label="Main navigation">
+			<div class="container">
+				<div class="navbar-brand">
+					<a href="#!">
+						<img src="../img/nav/nsf.gif" width="40" height="40" class="d-inline-block align-top" alt="NSF Logo" />
+					</a>
+					<a href="../index.html">
+						<img src="../img/nav/logo.svg" width="100" height="40" class="d-inline-block align-top" alt="CSDT Logo" />
+					</a>
+				</div>
+				<!-- Toggle for Mobile Navigation -->
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- Navigation Link Container -->
+				<div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+					<ul class="navbar-nav d-flex">
+						<li class="nav-item align-self-center">
+							<a class="nav-link" href="../publications.html">Publications</a>
+						</li>
+						<li class="nav-item align-self-center">
+							<a class="nav-link" href="../about.html">About</a>
+						</li>
+					</ul>
+					<ul class="navbar-nav d-flex">
+						<li class="nav-item align-self-center">
+							<span class="nav-link">Offline Version 1.0.0</span>
+						</li>
+						<li class="nav-item align-self-center" id="user-divide"></li>
+						<li class="nav-item align-self-center" id="user-help">
+							<a class="nav-link align-self-center" href="../help/index.html">
+								<i class="far fa-question-circle"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Progress Bar -->
+			<div class="progress-container fixed-top d-none d-sm-none d-lg-block">
+				<div class="progress-bar" id="myBar"></div>
+			</div>
+		</nav>
+		<!-- Mobile Navigation -->
+		<div class="fixed-top d-block d-lg-none" style="top: 65px; z-index: 1">
+			<div class="collapse" id="sectionNavigation">
+				<div class="bg-light px-4 pt-2 h-75 overflow-scroll">
+					<div id="mobileNavigation" class="navbar-nav d-block d-sm-block d-lg-none" role="mobile-container"></div>
+				</div>
+			</div>
+			<nav class="navbar navbar-dark bg-dark navbar__mobile--under" aria-label="Mobile navigation">
+				<div class="container">
+					<span></span>
+					<span class="nav-item bar align-self-center"></span>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#sectionNavigation"
+						aria-controls="sectionNavigation"
+						aria-expanded="false"
+						aria-label="Toggle tool navigation">
+						Jump to Section
+					</button>
+				</div>
+			</nav>
+		</div>
+		<main class="container">
+			<div class="row justify-content-between">
+				<div class="col-lg-2 d-none d-lg-flex">
+					<ul id="sidenav" class="list-group list-group-flush">
+						<li class="mainlink background">
+							<a href="index.html">
+								<div>Background</div>
+							</a>
+						</li>
+
+						<li class="mainlink spacer">
+							<a href="../static/tutorials/index.html?name=whte-en">
+								<div>Tutorial</div>
+							</a>
+						</li>
+						<li class="mainlink spacer active">
+							<a href="challenges.html">
+								<div>Challenges 1</div>
+							</a>
+						</li>
+						<li class="mainlink spacer">
+							<a href="background2.html">
+								<div>Background 2</div>
+							</a>
+						</li>
+						<li class="mainlink spacer">
+							<a href="challenges2.html">
+								<div>Challenges 2</div>
+							</a>
+						</li>
+						<li class="mainlink spacer">
+							<a href="background3.html">
+								<div>Background 3</div>
+							</a>
+						</li>
+						<li class="mainlink spacer">
+							<a href="challenges3.html">
+								<div>Challenges 3</div>
+							</a>
+						</li>
+						<li class="mainlink spacer">
+							<a href="../static/csnap_pro/csdt/snap.html#open:offline/whte/software.xml">
+								<div>Software</div>
+							</a>
+						</li>
+						<li class="mainlink spacer teaching">
+							<a href="teaching.html">
+								<div>Teaching Materials</div>
+							</a>
+						</li>
+						<li class="mainlink spacer">
+							<a href="index_bp.html">
+								<div>Em Português</div>
+							</a>
+						</li>
+						<li class="mainlink spacer">
+							<a href="index_es.html">
+								<div>En español</div>
+							</a>
+						</li>
+					</ul>
+					<!-- <div class="dropdown language-select">
+<button class="btn btn-secondary dropdown-toggle btn-sm" type="button" data-toggle="dropdown" aria-expanded="false">
+<i class="fas fa-language"></i> Select a language:
+</button>
+<div class="dropdown-menu">
+<a role="button" class="dropdown-item" href="index_es.html">Español</a>
+<a role="button" class="dropdown-item" href="index_bp.html">Português</a>
+</div>
+</div> -->
+				</div>
+				<div class="col-lg-10">
+					<h1>Challenges 1</h1>
+					<h2>Algorithmic Challenges</h2>
+					<div class="row">
+						<div class="col-md-3">
+							<img class="img-fluid rounded" src="img/cosmogram.jpg" />
+						</div>
+						<div class="col-md-9">
+							<p>The Mayan symbol for the universe (“cosmogram”). The central diamond shape is the sun.</p>
+							<p>
+								<a href="../static/csnap_pro/csdt/snap.html#open:offline/whte/challenge_1.xml">Launch the Software!</a>
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3">
+							<img class="img-fluid rounded" src="img/quechuandesign.png" />
+						</div>
+						<div class="col-md-9">
+							<p>
+								This twelve-cornered cross appears in some Incan designs prior to European contact, though no one knows
+								its symbolic meaning. If the white figure at the center is supposed to be a circle, it should become
+								more rounded as you create larger versions. See if you can you calculate the placement of the beads for
+								a larger version of this design.
+							</p>
+							<p>
+								<a href="../static/csnap_pro/csdt/snap.html#open:offline/whte/challenge_2.xml">Launch the Software!</a>
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-2">
+							<img class="img-fluid rounded" src="img/macaws.png" />
+						</div>
+						<div class="col-md-10">
+							<p>
+								These blue beads create a very steep angle. They are the tails of two Macaws in beadwork from the the
+								Embera Chamí people of Colombia. What is the slope? How does this compare to the slope of the Mayan
+								cosmogram? Why might the Mayan angle be more common (from a mathematical point of view)?
+							</p>
+							<p>
+								<a href="../static/csnap_pro/csdt/snap.html#open:offline/whte/challenge_3a.xml">Launch the Software!</a>
+							</p>
+							<p>
+								<a href="../static/csnap_pro/csdt/snap.html#open:offline/whte/challenge_3b.xml"
+									>Launch the Software! (version without loops)</a
+								>
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-2">
+							<img class="img-fluid rounded" src="img/birds.png" />
+						</div>
+						<div class="col-md-10">
+							<p></p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-2">
+							<img class="img-fluid rounded" src="img/emberachami.png" />
+						</div>
+						<div class="col-md-10">
+							<p>
+								This design is also from the Embera Chamí people in Columbia. The blue figure at center is called the
+								star of creation. How could you make that from triangles? From other shapes? How can iteration help
+								simulate such gradients of color or shade?
+							</p>
+							<p><a href="../static/csnap_pro/csdt/snap.html#open:offline/whte/2248.xml">Launch the Software!</a></p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<h2>Statistics Challenges</h2>
+							<p>
+								The Metropolitan Museum of Art in New York city has hired you to determine whether its new acquisitions
+								of Latin American beadwork is authentic. Your job is to create a simulation of a known authentic
+								original, and then compare the variance of color in the simulation to the new acquisitions.
+							</p>
+							<ol>
+								<li>
+									The first column of your simulation is complete. Its color range is narrow (0 to 20). You will need to
+									add two or three more columns, and a wider range of colors, to make it a better match to the museum’s
+									sample. Don't forget to save your work, and write down the color range you used.
+									<p>
+										<a href="../static/csnap_pro/csdt/snap.html#open:offline/whte/2201.xml">Launch the Software!</a>
+									</p>
+								</li>
+								<li>
+									Now that you know the color range, you can calculate the variance. When you have a set of consecutive
+									integers, the mean is (smallest + largest)/2. You can estimate the variance for the new color range
+									you created using the formula for the estimate of the mean of your random numbers, along with the
+									following project:
+									<p>
+										<a href="../static/csnap_pro/csdt/snap.html#open:offline/whte/2202.xml">Launch the Software!</a>
+									</p>
+								</li>
+								<li>
+									<p>
+										This program already calculates the sum of the squares. Add the missing block to help it calculate
+										the variance.
+									</p>
+								</li>
+								<li>
+									<p>Use the following steps to calculate the variance from a set of values:</p>
+									<ol>
+										<li>Calculate the mean of the sample (using (smallest + largest)/2).</li>
+										<li>Subtract the mean from each data point. ↓</li>
+										<li>Square each result. ↓</li>
+										<li>Find the sum of the squared values. ↓</li>
+										<li>Divide by n - 1, where n is the number of data points.</li>
+									</ol>
+								</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

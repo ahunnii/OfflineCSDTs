@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+	<title>Variables | CSDT</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Font Awesome CSS -->
+		<link rel="stylesheet" href="../css/fontawesome.css" />
+		<!-- Bootstrap 4 CSS -->
+		<link rel="stylesheet" href="../css/bootstrap-4.css" type="text/css" />
+		<!-- Global CSS -->
+		<link rel="stylesheet" href="../css/main.css" />
+		<!-- This tools CSS -->
+		<link rel="stylesheet" href="help.css" />
+
+		<!-- jQuery 3.4.1 -->
+		<script src="../js/jquery-3.4.1.js" type="application/javascript"></script>
+		<!-- Latest compiled and minified JavaScript for Bootstrap -->
+		<script src="../js/popper.js" type="application/javascript"></script>
+		<script src="../js/bootstrap-4.js" type="application/javascript"></script>
+		<!-- Plyr CSS -->
+		<link rel="stylesheet" href="../css/plyr.css" />
+		<!-- Video Player (plyr)-->
+		<script src="../js/plyr.js"></script>
+		<!-- Main JavaScript -->
+		<script src="../js/static-cloud.js"></script>
+		<script src="../js/main.js"></script>
+	</head>
+	<body>
+		<nav class="navbar fixed-top navbar-expand-lg navbar-dark" aria-label="Main navigation">
+			<div class="container">
+				<div class="navbar-brand">
+					<a href="#!">
+						<img src="../img/nav/nsf.gif" width="40" height="40" class="d-inline-block align-top" alt="NSF Logo" />
+					</a>
+					<a href="../index.html">
+						<img src="../img/nav/logo.svg" width="100" height="40" class="d-inline-block align-top" alt="CSDT Logo" />
+					</a>
+				</div>
+				<!-- Toggle for Mobile Navigation -->
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- Navigation Link Container -->
+				<div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+					<ul class="navbar-nav d-flex">
+						<li class="nav-item align-self-center">
+							<a class="nav-link" href="../publications.html">Publications</a>
+						</li>
+						<li class="nav-item align-self-center">
+							<a class="nav-link" href="../about.html">About</a>
+						</li>
+					</ul>
+					<ul class="navbar-nav d-flex">
+						<li class="nav-item align-self-center">
+							<span class="nav-link">Offline Version 1.0.0</span>
+						</li>
+						<li class="nav-item align-self-center" id="user-divide"></li>
+						<li class="nav-item align-self-center" id="user-help">
+							<a class="nav-link align-self-center" href="../help/index.html">
+								<i class="far fa-question-circle"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Progress Bar -->
+			<div class="progress-container fixed-top d-none d-sm-none d-lg-block">
+				<div class="progress-bar" id="myBar"></div>
+			</div>
+		</nav>
+		<!-- Mobile Navigation -->
+		<div class="fixed-top d-block d-lg-none" style="top: 65px; z-index: 1">
+			<div class="collapse" id="sectionNavigation">
+				<div class="bg-light px-4 pt-2 h-75 overflow-scroll">
+					<div id="mobileNavigation" class="navbar-nav d-block d-sm-block d-lg-none" role="mobile-container"></div>
+				</div>
+			</div>
+			<nav class="navbar navbar-dark bg-dark navbar__mobile--under" aria-label="Mobile navigation">
+				<div class="container">
+					<span>Variables</span>
+					<span class="nav-item bar align-self-center"></span>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#sectionNavigation"
+						aria-controls="sectionNavigation"
+						aria-expanded="false"
+						aria-label="Toggle tool navigation">
+						Jump to Section
+					</button>
+				</div>
+			</nav>
+		</div>
+		<main class="container">
+			<div class="row justify-content-between">
+				<div class="col-lg-2 d-none d-lg-flex">
+					<ul id="sidenav" class="list-group list-group-flush">
+						<li class="mainlink background">
+							<a href="index.html">
+								<div>Getting Started</div>
+							</a>
+						</li>
+						<li class="mainlink mainlink-extended spacer">
+							<a href="teachers.html">
+								<div>Teacher's Guide</div>
+							</a>
+						</li>
+
+						<li class="mainlink mainlink-extended spacer">
+							<a href="faq.html">
+								<div>FAQs</div>
+							</a>
+						</li>
+						<li class="mainlink spacer">
+							<a href="colors.html">
+								<div>Colors</div>
+							</a>
+						</li>
+						<li class="mainlink mainlink-extended spacer">
+							<a href="common_blocks.html">
+								<div>Common Blocks</div>
+							</a>
+						</li>
+						<li class="mainlink spacer">
+							<a href="blocks.html">
+								<div>Blocks Reference</div>
+							</a>
+						</li>
+
+						<li class="teaching_link sublink">
+							<a href="motion.html">
+								<div>Motion</div>
+							</a>
+						</li>
+						<li class="teaching_link sublink">
+							<a href="looks.html">
+								<div>Looks</div>
+							</a>
+						</li>
+						<li class="teaching_link sublink">
+							<a href="sound.html">
+								<div>Sound</div>
+							</a>
+						</li>
+						<li class="teaching_link sublink">
+							<a href="pen.html">
+								<div>Pen</div>
+							</a>
+						</li>
+						<li class="teaching_link sublink">
+							<a href="control.html">
+								<div>Control</div>
+							</a>
+						</li>
+						<li class="teaching_link sublink">
+							<a href="sensing.html">
+								<div>Sensing</div>
+							</a>
+						</li>
+						<li class="teaching_link sublink">
+							<a href="operators.html">
+								<div>Operators</div>
+							</a>
+						</li>
+						<li class="teaching_link sublink active">
+							<a href="variables.html">
+								<div>Variables</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-10">
+					<h1>Variables Blocks</h1>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/color.png" class="img-fluid smaller" style="max-width: 50%" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Color</li>
+								<li>Type: Reporter</li>
+								<li>Reports the current color value</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/count.png" class="img-fluid smaller" style="max-width: 50%" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Count</li>
+								<li>Type: Reporter</li>
+								<li>Reports the current value of count</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/setto.png" class="img-fluid smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Set To Block</li>
+								<li>Type: Command</li>
+								<li>
+									Sets the variable in the dropdown list to the value specified following 'to'. Use this block to store
+									information in a variables.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/changeby.png" class="img-fluid smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Change by</li>
+								<li>Type: Command</li>
+								<li>
+									Adds the by amount to the variable in the dropdown list. Use this block to increment or decrement the
+									variables value.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/showvariable.png" class="img-fluid smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Show Variable</li>
+								<li>Type: Command</li>
+								<li>Shows the variable specified in the dropdown list</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/hidevariable.png" class="img-fluid smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Hide Variable Block</li>
+								<li>Type: Command</li>
+								<li>Description:</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/scriptvariables.png" class="img-fluid smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Script Variables Block</li>
+								<li>Type: Command</li>
+								<li>Description: This block creates named variables for a script.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/inherit.png" class="img-fluid smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Inherit Block</li>
+								<li>Type: Command</li>
+								<li>Description:</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/list.png" class="img-fluid smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: List Block</li>
+								<li>Type: Reporter</li>
+								<li>Description: The list block creates a list of values to be stored in a variable.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/numbersfromto.png" class="img-fluid smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Numbers From To Block</li>
+								<li>Type: Reporter</li>
+								<li>
+									Description: This block returns the numbers from the first input block to the second input block.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/infrontoflist.png" class="img-fluid smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: In Front of List</li>
+								<li>Type: Reporter</li>
+								<li>Description: This block returns a list with the value in the input box in front.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/itemoflist.png" class="img-fluid smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Item Of Block</li>
+								<li>Type: Reporter</li>
+								<li>
+									Description: This block returns a specific item in a list located at the numbered position. If you
+									store information in a list, use the item block to get its value.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/allbutfirstoflist.png" class="img-fluid smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: All But First Of List</li>
+								<li>Type: Reporter</li>
+								<li>Description: This block returns everything in a list, after the first item.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/lengthoflist.png" class="img-fluid smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Length of List Block</li>
+								<li>Type: Reporter</li>
+								<li>
+									Description: This block returns the length of a list. Use this block to tell you (or another block)
+									how long a list is.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/listcontains.png" class="img-fluid smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: List Contains Block</li>
+								<li>Type: Logical Operator</li>
+								<li>
+									Description: This block returns True if the contents of the input block are found in the list and
+									False otherwise.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/islistempty.png" class="img-fluid smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Is List Empty</li>
+								<li>Type: Logical Operator</li>
+								<li>Description: This block returns True if the list is an empty list, or False if not.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/mapoverlist.png" class="img-fluid smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Map Over List</li>
+								<li>Type: reporter</li>
+								<li>Description: This block conducts a series of operations to each item in a list.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/keepitemsfromlist.png" class="img-fluid smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name:Keep Items From List</li>
+								<li>Type: Reporter</li>
+								<li>Description:</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/findfirstiteminlist.png" class="img-fluid smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name:Find First Item In List Block</li>
+								<li>Type: Reporter</li>
+								<li>Description:</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/foreachiteminlist.png" class="img-fluid smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: For Each Item In List Block</li>
+								<li>Type: Command</li>
+								<li>
+									Description: This block applies a series of actions for each item in the list. The block actions are
+									blocks enclosed within the block.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/appendlistlist.png" class="img-fluid smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Append List LIst Block</li>
+								<li>Type: Reporter</li>
+								<li>Description: This block returns the result of appending two lists together.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/reshapelist.png" class="img-fluid smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Reshape list Block</li>
+								<li>Type: Reporter</li>
+								<li>
+									Description: This block takes a list turns it into an n x m list where n is the value in the first
+									input oval and m is the value in the second input oval.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/addtolist.png" class="img-fluid smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Add To List Block</li>
+								<li>Type: Command</li>
+								<li>Description: This block appends the text in the input block to the list.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/deleteoflist.png" class="img-fluid smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Delete Of List Block</li>
+								<li>Type: Command</li>
+								<li>Description: This block deletes the item at the location indicated by the oval.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/insertatoflist.png" class="img-fluid smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Insert At Of List Block</li>
+								<li>Type: Command</li>
+								<li>
+									Description: This block inserts the text of the first input block at the location of the list
+									indicated by the input oval.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/replaceitemoflistwith.png" class="img-fluid smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Replace Item Of List With Block</li>
+								<li>Type: Command</li>
+								<li>
+									Description: This block replaces the text in list at the location indicated by the first input oval
+									with the text in the input block.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/indexofinlist.png" class="img-fluid smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Index Of In List Block</li>
+								<li>Type: Reporter</li>
+								<li>Description: This block returns the location of the item in the text input block in the list.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/combinelistusing.png" class="img-fluid smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Combine List Using Block</li>
+								<li>Type: Reporter</li>
+								<li>Description:</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

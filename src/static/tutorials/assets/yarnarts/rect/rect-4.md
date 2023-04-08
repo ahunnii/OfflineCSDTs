@@ -1,0 +1,6 @@
+- At the top of the inner loop, drag in a purple 'set color effect to \_' block.
+- We're going to mirror the colors along the horizontal by using the absolute value green operator block. Find the green oval block that says '_ of _' and drag it into the color effect block. Choose 'abs', or absolute value, from the left hand drop down list. Notice we are using a block inside of a block, to perform math on a value
+- Let's put a block inside a block inside a block! Now drag in the green division operator ('_ / _') into the right value oval on the absolute value block. Notice how it is shaped like an oval instead of a rectangle? This means that it modifies values, and can be dropped in anywhere you normally type in numbers (which are also oval shaped) to further modify values in a specific way
+- Go to the motion menu and drag in the blue oval 'y position' on the left side of the '_ / _' oval
+- Set the right side of the green '_ / _' oval to 4. This calculates our y position using coordinates on the graph and divides it by four to set the color of the stitch
+- The absolute value on the y position means that the rows above and below the horizontal will be mirrored in color, because absolute value of y = -1 is equal to absolute value of y = +1, and so forth

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+	<title>Beadwork Statistics | CSDT</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Font Awesome CSS -->
+		<link rel="stylesheet" href="../css/fontawesome.css" />
+		<!-- Bootstrap 4 CSS -->
+		<link rel="stylesheet" href="../css/bootstrap-4.css" crossorigin="anonymous" />
+		<!-- Global CSS -->
+		<link rel="stylesheet" href="../css/main.css" />
+		<!-- Specific CSS for this tool -->
+		<link rel="stylesheet" href="template.css" />
+
+		<!-- jQuery 3.4.1 -->
+		<script src="../js/jquery-3.4.1.js" crossorigin="anonymous"></script>
+		<!-- Latest compiled and minified JavaScript for Bootstrap -->
+		<script src="../js/popper.js" crossorigin="anonymous"></script>
+		<script src="../js/bootstrap-4.js" crossorigin="anonymous"></script>
+		<!-- Main JavaScript -->
+		<script src="../js/static-cloud.js"></script>
+		<script src="../js/main.js"></script>
+	</head>
+	<body>
+		<nav class="navbar fixed-top navbar-expand-lg navbar-dark" aria-label="Main navigation">
+			<div class="container">
+				<div class="navbar-brand">
+					<a href="#!">
+						<img src="../img/nav/nsf.gif" width="40" height="40" class="d-inline-block align-top" alt="NSF Logo" />
+					</a>
+					<a href="../index.html">
+						<img src="../img/nav/logo.svg" width="100" height="40" class="d-inline-block align-top" alt="CSDT Logo" />
+					</a>
+				</div>
+				<!-- Toggle for Mobile Navigation -->
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- Navigation Link Container -->
+				<div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+					<ul class="navbar-nav d-flex">
+						<li class="nav-item align-self-center">
+							<a class="nav-link" href="../publications.html">Publications</a>
+						</li>
+						<li class="nav-item align-self-center">
+							<a class="nav-link" href="../about.html">About</a>
+						</li>
+					</ul>
+					<ul class="navbar-nav d-flex">
+						<li class="nav-item align-self-center">
+							<span class="nav-link">Offline Version 1.0.0</span>
+						</li>
+						<li class="nav-item align-self-center" id="user-divide"></li>
+						<li class="nav-item align-self-center" id="user-help">
+							<a class="nav-link align-self-center" href="../help/index.html">
+								<i class="far fa-question-circle"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Progress Bar -->
+			<div class="progress-container fixed-top d-none d-sm-none d-lg-block">
+				<div class="progress-bar" id="myBar"></div>
+			</div>
+		</nav>
+		<!-- Mobile Navigation -->
+		<div class="fixed-top d-block d-lg-none" style="top: 65px; z-index: 1">
+			<div class="collapse" id="sectionNavigation">
+				<div class="bg-light px-4 pt-2 h-75 overflow-scroll">
+					<div id="mobileNavigation" class="navbar-nav d-block d-sm-block d-lg-none" role="mobile-container"></div>
+				</div>
+			</div>
+			<nav class="navbar navbar-dark bg-dark navbar__mobile--under" aria-label="Mobile navigation">
+				<div class="container">
+					<span>Beadwork Statistics</span>
+					<span class="nav-item bar align-self-center"></span>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#sectionNavigation"
+						aria-controls="sectionNavigation"
+						aria-expanded="false"
+						aria-label="Toggle tool navigation">
+						Jump to Section
+					</button>
+				</div>
+			</nav>
+		</div>
+		<main class="container">
+			<div class="row justify-content-between">
+				<div class="col-lg-2 d-none d-lg-flex">
+					<ul id="sidenav" class="list-group list-group-flush">
+						<li class="mainlink background">
+							<a href="index.html">
+								<div>Background</div>
+							</a>
+						</li>
+
+						<li class="background_link sublink">
+							<a href="wovenheaven.html">
+								<div>IKS: Woven Heaven</div>
+							</a>
+						</li>
+						<li class="background_link sublink">
+							<a href="tangledearth.html">
+								<div>IKS: Tangled Earth</div>
+							</a>
+						</li>
+						<li class="background_link sublink">
+							<a href="beadworkalgorithm.html">
+								<div>Beadwork Algorithm</div>
+							</a>
+						</li>
+						<li class="background_link sublink active">
+							<a href="beadworkstatistics.html">
+								<div>Beadwork Statistics</div>
+							</a>
+						</li>
+
+						<li class="mainlink spacer">
+							<a href="../static/tutorials/index.html?name=whte-en">
+								<div>Tutorial</div>
+							</a>
+						</li>
+						<li class="mainlink spacer">
+							<a href="challenges.html">
+								<div>Challenges 1</div>
+							</a>
+						</li>
+						<li class="mainlink spacer">
+							<a href="background2.html">
+								<div>Background 2</div>
+							</a>
+						</li>
+						<li class="mainlink spacer">
+							<a href="challenges2.html">
+								<div>Challenges 2</div>
+							</a>
+						</li>
+						<li class="mainlink spacer">
+							<a href="background3.html">
+								<div>Background 3</div>
+							</a>
+						</li>
+						<li class="mainlink spacer">
+							<a href="challenges3.html">
+								<div>Challenges 3</div>
+							</a>
+						</li>
+						<li class="mainlink spacer">
+							<a href="../static/csnap_pro/csdt/snap.html#open:offline/whte/software.xml">
+								<div>Software</div>
+							</a>
+						</li>
+						<li class="mainlink spacer teaching">
+							<a href="teaching.html">
+								<div>Teaching Materials</div>
+							</a>
+						</li>
+						<li class="mainlink spacer">
+							<a href="index_bp.html">
+								<div>Em Português</div>
+							</a>
+						</li>
+						<li class="mainlink spacer">
+							<a href="index_es.html">
+								<div>En español</div>
+							</a>
+						</li>
+					</ul>
+					<!-- <div class="dropdown language-select">
+<button class="btn btn-secondary dropdown-toggle btn-sm" type="button" data-toggle="dropdown" aria-expanded="false">
+<i class="fas fa-language"></i> Select a language:
+</button>
+<div class="dropdown-menu">
+<a role="button" class="dropdown-item" href="index_es.html">Español</a>
+<a role="button" class="dropdown-item" href="index_bp.html">Português</a>
+</div>
+</div> -->
+				</div>
+				<div class="col-lg-10">
+					<h1>Beadwork Statistics</h1>
+					<div class="row">
+						<div class="col-md-3">
+							<img class="img-fluid rounded" src="img/labyrinthvase.png" />
+						</div>
+						<div class="col-md-3">
+							<img class="img-fluid rounded" src="img/labyrinthface.png" />
+						</div>
+						<div class="col-md-6">
+							<p>
+								Just as heaven’s order is reflected by images such as Cartesian designs in the beadloom, the tangle of
+								earth’s living disorder is sometimes given visual representation using random or nonlinear designs. A
+								labyrinth of unpredictably branching forms can be seen in tunnels below Mayan temples, and in stories
+								such as Octavio Paz’s Labyrinth of Solitude. At left you can see labyrinth motifs in the face painting
+								of the Shipibo people of Peru, Brazil and Bolivia.
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<img class="img-fluid rounded" src="img/mayanlabyrinth.png" />
+						</div>
+						<div class="col-md-8">
+							<p>
+								These “disorder designs” sometimes make an appearance in beadwork, although that is more rare than the
+								geometric variety. In the Mayan design at left, labyrinth-like branching frames random variations of
+								color. Here the color variation is subtle-- from dark blue to light blue-- but artists can control the
+								range of variation to suit their own tastes or those of their customers, as we see in this Mayan beaded
+								purse:
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<img class="img-fluid rounded" src="img/guatemalanpurse.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

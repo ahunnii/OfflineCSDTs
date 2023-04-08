@@ -1,0 +1,4 @@
+- A helpful trick with CSnap is that you can copy and paste your code! This can save you time, especially when creating complicated designs. To do this, you can right click the block that you want to copy. There are two options, duplicate and the block image.
+- **Duplicate** will copy everything from the block you right clicked, downwards. So if you were to duplicate from the ![""](./img/goTo.png) block, it will duplicate this block, as well as your ![""](./img/repeat.png) and everything in it.
+- The code image will just duplicate the block you selected, i.e. just the one block.
+- **Note: make sure to change your parameter values within your duplicated code, if needed!**

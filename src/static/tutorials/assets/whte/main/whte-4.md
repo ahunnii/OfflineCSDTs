@@ -1,0 +1,5 @@
+- Let's control the brightness of the beads.
+- We will use "set the brightness to ".
+- 100 is pure white, while -100 is pure black.
+- We will start with 0 as neutral.
+- Then set it to -25 for a darker bead.

@@ -1,0 +1,6 @@
+- Ahora vamos a crear algunas líneas.
+- Duplique los bloques "ir a la cuenta x", "ir a la cuenta y", "apuntar hacia el ángulo".
+- La posición y debe ser -11 y el ángulo debe ser -45 grados.
+- Actualice el último bloque de brillo para que sea 0.
+- Use un bloque de "línea" con una longitud de cuenta de 6.
+- Esto creará una línea de cuentas de 6 cuentas de largo.

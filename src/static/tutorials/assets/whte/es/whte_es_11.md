@@ -1,0 +1,5 @@
+- ¡Casi terminado! Envolvamos nuestros bloques anteriores con una "repetición" más.
+- Agregue el último bloque "asignar" y el bloque "repetir" al nuevo bloque "repetir". Establezca el número de iteraciones en 2.
+- En la parte inferior del último bloque "repetir", agregue un bloque "ir a la cuenta x" e "ir a la cuenta y".
+- Establezca la posición y en 11.
+- ¡Golpea la bandera verde para ver tu dibujo terminado!

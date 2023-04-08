@@ -1,0 +1,4 @@
+- ¡Nosotros vamos a dibujar un triángulo!
+- Primero, establezca su posición y en 11.
+- Luego, adjunte "triángulo iso".
+- Estamos agregando 1 cuenta cada 1 fila para 12 iteraciones en la dirección -y.

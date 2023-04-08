@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+	<title>Sensing | CSDT</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Font Awesome CSS -->
+		<link rel="stylesheet" href="../css/fontawesome.css" />
+		<!-- Bootstrap 4 CSS -->
+		<link rel="stylesheet" href="../css/bootstrap-4.css" type="text/css" />
+		<!-- Global CSS -->
+		<link rel="stylesheet" href="../css/main.css" />
+		<!-- This tools CSS -->
+		<link rel="stylesheet" href="help.css" />
+
+		<!-- jQuery 3.4.1 -->
+		<script src="../js/jquery-3.4.1.js" type="application/javascript"></script>
+		<!-- Latest compiled and minified JavaScript for Bootstrap -->
+		<script src="../js/popper.js" type="application/javascript"></script>
+		<script src="../js/bootstrap-4.js" type="application/javascript"></script>
+		<!-- Plyr CSS -->
+		<link rel="stylesheet" href="../css/plyr.css" />
+		<!-- Video Player (plyr)-->
+		<script src="../js/plyr.js"></script>
+		<!-- Main JavaScript -->
+		<script src="../js/static-cloud.js"></script>
+		<script src="../js/main.js"></script>
+	</head>
+	<body>
+		<nav class="navbar fixed-top navbar-expand-lg navbar-dark" aria-label="Main navigation">
+			<div class="container">
+				<div class="navbar-brand">
+					<a href="#!">
+						<img src="../img/nav/nsf.gif" width="40" height="40" class="d-inline-block align-top" alt="NSF Logo" />
+					</a>
+					<a href="../index.html">
+						<img src="../img/nav/logo.svg" width="100" height="40" class="d-inline-block align-top" alt="CSDT Logo" />
+					</a>
+				</div>
+				<!-- Toggle for Mobile Navigation -->
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- Navigation Link Container -->
+				<div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+					<ul class="navbar-nav d-flex">
+						<li class="nav-item align-self-center">
+							<a class="nav-link" href="../publications.html">Publications</a>
+						</li>
+						<li class="nav-item align-self-center">
+							<a class="nav-link" href="../about.html">About</a>
+						</li>
+					</ul>
+					<ul class="navbar-nav d-flex">
+						<li class="nav-item align-self-center">
+							<span class="nav-link">Offline Version 1.0.0</span>
+						</li>
+						<li class="nav-item align-self-center" id="user-divide"></li>
+						<li class="nav-item align-self-center" id="user-help">
+							<a class="nav-link align-self-center" href="../help/index.html">
+								<i class="far fa-question-circle"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Progress Bar -->
+			<div class="progress-container fixed-top d-none d-sm-none d-lg-block">
+				<div class="progress-bar" id="myBar"></div>
+			</div>
+		</nav>
+		<!-- Mobile Navigation -->
+		<div class="fixed-top d-block d-lg-none" style="top: 65px; z-index: 1">
+			<div class="collapse" id="sectionNavigation">
+				<div class="bg-light px-4 pt-2 h-75 overflow-scroll">
+					<div id="mobileNavigation" class="navbar-nav d-block d-sm-block d-lg-none" role="mobile-container"></div>
+				</div>
+			</div>
+			<nav class="navbar navbar-dark bg-dark navbar__mobile--under" aria-label="Mobile navigation">
+				<div class="container">
+					<span>Sensing</span>
+					<span class="nav-item bar align-self-center"></span>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#sectionNavigation"
+						aria-controls="sectionNavigation"
+						aria-expanded="false"
+						aria-label="Toggle tool navigation">
+						Jump to Section
+					</button>
+				</div>
+			</nav>
+		</div>
+		<main class="container">
+			<div class="row justify-content-between">
+				<div class="col-lg-2 d-none d-lg-flex">
+					<ul id="sidenav" class="list-group list-group-flush">
+						<li class="mainlink background">
+							<a href="index.html">
+								<div>Getting Started</div>
+							</a>
+						</li>
+						<li class="mainlink mainlink-extended spacer">
+							<a href="teachers.html">
+								<div>Teacher's Guide</div>
+							</a>
+						</li>
+
+						<li class="mainlink mainlink-extended spacer">
+							<a href="faq.html">
+								<div>FAQs</div>
+							</a>
+						</li>
+						<li class="mainlink spacer">
+							<a href="colors.html">
+								<div>Colors</div>
+							</a>
+						</li>
+						<li class="mainlink mainlink-extended spacer">
+							<a href="common_blocks.html">
+								<div>Common Blocks</div>
+							</a>
+						</li>
+						<li class="mainlink spacer">
+							<a href="blocks.html">
+								<div>Blocks Reference</div>
+							</a>
+						</li>
+
+						<li class="teaching_link sublink">
+							<a href="motion.html">
+								<div>Motion</div>
+							</a>
+						</li>
+						<li class="teaching_link sublink">
+							<a href="looks.html">
+								<div>Looks</div>
+							</a>
+						</li>
+						<li class="teaching_link sublink">
+							<a href="sound.html">
+								<div>Sound</div>
+							</a>
+						</li>
+						<li class="teaching_link sublink">
+							<a href="pen.html">
+								<div>Pen</div>
+							</a>
+						</li>
+						<li class="teaching_link sublink">
+							<a href="control.html">
+								<div>Control</div>
+							</a>
+						</li>
+						<li class="teaching_link sublink active">
+							<a href="sensing.html">
+								<div>Sensing</div>
+							</a>
+						</li>
+						<li class="teaching_link sublink">
+							<a href="operators.html">
+								<div>Operators</div>
+							</a>
+						</li>
+						<li class="teaching_link sublink">
+							<a href="variables.html">
+								<div>Variables</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-10">
+					<h1>Sensing Blocks</h1>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/touchingmouse-pointer.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name:</li>
+								<li>Type: Logical Operator</li>
+								<li>Description:</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/touching.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Touching Sprite Block</li>
+								<li>Type: Logical Operator</li>
+								<li>Description: Returns true if you are touching a specific sprite, edge, or mouse.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/coloristouching.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Touching Color Block</li>
+								<li>Type: Logical Operator</li>
+								<li>
+									Description: Returns true if you are touching a specific color. Click the color, and then move your
+									mouse over the color you want to detect.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/askandwait.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Ask and Wait Block</li>
+								<li>Type: Command</li>
+								<li>Description: Have the object ask a question and wait for the user to type a response.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/answer.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Answer Block</li>
+								<li>Type: Reporter</li>
+								<li>Description: This block reports the value of what was typed using the Ask and Wait Block.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/mousex.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Mouse X Block</li>
+								<li>Type: Reporter</li>
+								<li>Description: This block returns the current X position of the mouse.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/mousey.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Mouse Y Block</li>
+								<li>Type: Reporter</li>
+								<li>Description: This block returns the current Y position of the mouse.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/resettimer.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Reset Timer Block</li>
+								<li>Type: Command</li>
+								<li>Description: This block resets the timer.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/timer.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Timer</li>
+								<li>Type: Reporter</li>
+								<li>Description: This block returns the current value of the Timer.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/costumenumberof.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Attribute Of Block</li>
+								<li>Type: Reporter</li>
+								<li>
+									Description: This block returns attributes of an object. These include s position, y position,
+									direction, costume #, costume name size, width, height, left, right, top, bottom, volume, and balance.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/myneighbors.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: My Block</li>
+								<li>Type: Reporter</li>
+								<li>
+									Description: This block returns attributes of an object. These include neighbors, self, other sprites,
+									clones, other clones, parts, anchor, stage, children, parent, temporary?, name, costume, costumes,
+									sounds, dangling? draggable?, width, height, left, right, top, bottom, rotation style, rotation x,
+									rotation y, center x, center y.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/objectmyself.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Object Block</li>
+								<li>Type: Reporter</li>
+								<li>Description: This block returns a reference to an object accessible through the drop down.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/url.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: URL Block</li>
+								<li>Type: Reporter</li>
+								<li>Description: Returns the input block text as a URL.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/microphonevolume.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Microphone Block</li>
+								<li>Type: Reporter</li>
+								<li>
+									Description: This block returns attributes of the microphone object, including volume, note,
+									frequency, samples, sample rate, spectrum, resolution.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/videomotiononmyself.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Video On Block</li>
+								<li>Type: Reporter</li>
+								<li>
+									Description: This block returns video related attributes. Arguments in the first drop Down include
+									snap, motion, and direction. The second drop down includes all named objects.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/setvideotransparencyto.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Set Video Transparency Block</li>
+								<li>Type: Command</li>
+								<li>Description: This block sets the video transparency value provided by the input oval.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/setvideocaptureto.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Set Video Capture To Block</li>
+								<li>Type: Command</li>
+								<li>
+									Description: This block takes a Boolean argument and applies it to set turbo mode, flat line ends, log
+									pen vectors, video capture, and mirror video.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/currentdate.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Date Block</li>
+								<li>Type: Reporter</li>
+								<li>Description: This block returns the current system date.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

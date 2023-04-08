@@ -1,0 +1,4 @@
+- We are going to draw a triangle.
+- First, set your y position to 11.
+- Then, attach "iso triangle".
+- We are adding 1 bead every 1 row for 12 iterations in the -y direction

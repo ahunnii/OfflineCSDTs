@@ -1,0 +1,4 @@
+- Drag in the &quot;repeat&quot; block
+- The &quot;flag&quot; block controls the start of the program
+- Put the &quot;stamp&quot; and &quot;translate by&quot; blocks inside the &quot;repeat&quot; block
+- Set the number of repetitions in the block

@@ -1,0 +1,8 @@
+- Click on the green flag at the upper right to see it run.
+- Let's summarize what the blocks we are going to lay down will do:
+- First it goes to the center (`go to x: 0 y: 0`).
+- Then it rotates (`turn 60 degrees`).
+- Then it moves (`translate by 70 of width`).
+- Finally it makes the copy of itself (`stamp`) and goes back to repeat this a total of 6 times (`repeat 6`).
+- 6 repeats of 60 degrees = 360 degrees! A full circle!
+- Now that you understand how it works, you can experiment! Click #3 above.

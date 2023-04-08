@@ -1,0 +1,4 @@
+- Vamos repetir o código anterior 2 vezes, usando outro bloco "repetir".
+- Modifique a "variável de ajuste" e o primeiro bloco de "repetição" no novo. Defina o número de iterações como 2.
+- Use um bloco "girar por" abaixo da primeira "repetição" e defina-o em -90.
+- Use um bloco "go to bead x" abaixo do "rotate" para nos levar de volta ao eixo y.

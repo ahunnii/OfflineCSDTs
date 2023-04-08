@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+	<title>Challenge | CSDT</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Font Awesome CSS -->
+		<link rel="stylesheet" href="../css/fontawesome.css" />
+		<!-- Bootstrap 4 CSS -->
+		<link rel="stylesheet" href="../css/bootstrap-4.css" crossorigin="anonymous" />
+		<!-- Global CSS -->
+		<link rel="stylesheet" href="../css/main.css" />
+		<!-- Specific CSS for this tool -->
+		<link rel="stylesheet" href="template.css" />
+
+		<!-- jQuery 3.4.1 -->
+		<script src="../js/jquery-3.4.1.js" crossorigin="anonymous"></script>
+		<!-- Latest compiled and minified JavaScript for Bootstrap -->
+		<script src="../js/popper.js" crossorigin="anonymous"></script>
+		<script src="../js/bootstrap-4.js" crossorigin="anonymous"></script>
+		<!-- Main JavaScript -->
+		<script src="../js/static-cloud.js"></script>
+		<script src="../js/main.js"></script>
+	</head>
+	<body>
+		<nav class="navbar fixed-top navbar-expand-lg navbar-dark" aria-label="Main navigation">
+			<div class="container">
+				<div class="navbar-brand">
+					<a href="#!">
+						<img src="../img/nav/nsf.gif" width="40" height="40" class="d-inline-block align-top" alt="NSF Logo" />
+					</a>
+					<a href="../index.html">
+						<img src="../img/nav/logo.svg" width="100" height="40" class="d-inline-block align-top" alt="CSDT Logo" />
+					</a>
+				</div>
+				<!-- Toggle for Mobile Navigation -->
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- Navigation Link Container -->
+				<div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+					<ul class="navbar-nav d-flex">
+						<li class="nav-item align-self-center">
+							<a class="nav-link" href="../publications.html">Publications</a>
+						</li>
+						<li class="nav-item align-self-center">
+							<a class="nav-link" href="../about.html">About</a>
+						</li>
+					</ul>
+					<ul class="navbar-nav d-flex">
+						<li class="nav-item align-self-center">
+							<span class="nav-link">Offline Version 1.0.0</span>
+						</li>
+						<li class="nav-item align-self-center" id="user-divide"></li>
+						<li class="nav-item align-self-center" id="user-help">
+							<a class="nav-link align-self-center" href="../help/index.html">
+								<i class="far fa-question-circle"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Progress Bar -->
+			<div class="progress-container fixed-top d-none d-sm-none d-lg-block">
+				<div class="progress-bar" id="myBar"></div>
+			</div>
+		</nav>
+		<!-- Mobile Navigation -->
+		<div class="fixed-top d-block d-lg-none" style="top: 65px; z-index: 1">
+			<div class="collapse" id="sectionNavigation">
+				<div class="bg-light px-4 pt-2 h-75 overflow-scroll">
+					<div id="mobileNavigation" class="navbar-nav d-block d-sm-block d-lg-none" role="mobile-container"></div>
+				</div>
+			</div>
+			<nav class="navbar navbar-dark bg-dark navbar__mobile--under" aria-label="Mobile navigation">
+				<div class="container">
+					<span>Challenge</span>
+					<span class="nav-item bar align-self-center"></span>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#sectionNavigation"
+						aria-controls="sectionNavigation"
+						aria-expanded="false"
+						aria-label="Toggle tool navigation">
+						Jump to Section
+					</button>
+				</div>
+			</nav>
+		</div>
+		<main class="container">
+			<div class="row justify-content-between">
+				<div class="col-lg-2 d-none d-lg-flex">
+					<ul id="sidenav" class="list-group list-group-flush">
+						<li class="mainlink background">
+							<a href="index_es.html">
+								<div>Introducción</div>
+							</a>
+						</li>
+
+						<li class="background_link sublink">
+							<a href="wovenheaven_es.html">
+								<div>SCI: Cielo Tejido</div>
+							</a>
+						</li>
+						<li class="background_link sublink">
+							<a href="tangledearth_es.html">
+								<div>SCI: Tierra Enredada</div>
+							</a>
+						</li>
+						<li class="background_link sublink">
+							<a href="beadworkalgorithm_es.html">
+								<div>Trabajo con Cuentas: Algoritmos</div>
+							</a>
+						</li>
+						<li class="background_link sublink">
+							<a href="beadworkstatistics_es.html">
+								<div>Trabajo con Cuentas: Estadística</div>
+							</a>
+						</li>
+
+						<li class="mainlink spacer">
+							<a href="../static/tutorials/index.html?name=whte-es">
+								<div>Tutorial</div>
+							</a>
+						</li>
+						<li class="mainlink spacer active">
+							<a href="challenges_es.html">
+								<div>Retos 1</div>
+							</a>
+						</li>
+						<li class="mainlink spacer">
+							<a href="background2_es.html">
+								<div>Antecedentes 2</div>
+							</a>
+						</li>
+						<li class="mainlink spacer">
+							<a href="challenges2_es.html">
+								<div>Retos 2</div>
+							</a>
+						</li>
+						<li class="mainlink spacer">
+							<a href="background3_es.html">
+								<div>Antecedentes 3</div>
+							</a>
+						</li>
+						<li class="mainlink spacer">
+							<a href="challenges3_es.html">
+								<div>Retos 3</div>
+							</a>
+						</li>
+						<li class="mainlink spacer">
+							<a href="../static/csnap_pro/csdt/snap.html#open:offline/whte/software.xml">
+								<div>Software</div>
+							</a>
+						</li>
+						<li class="mainlink spacer teaching">
+							<a href="teaching_es.html">
+								<div>Materiales de enseñanza</div>
+							</a>
+						</li>
+						<li class="mainlink spacer">
+							<a href="index_bp.html">
+								<div>Em Português</div>
+							</a>
+						</li>
+						<li class="mainlink spacer">
+							<a href="index.html">
+								<div>In English</div>
+							</a>
+						</li>
+					</ul>
+					<!-- <div class="dropdown language-select">
+<button class="btn btn-secondary dropdown-toggle btn-sm" type="button" data-toggle="dropdown" aria-expanded="false">
+<i class="fas fa-language"></i> Selecciona un idioma:
+</button>
+<div class="dropdown-menu">
+<a role="button" class="dropdown-item" href="index_bp.html">Português</a>
+<a role="button" class="dropdown-item" href="index.html">English</a>
+</div>
+</div> -->
+				</div>
+				<div class="col-lg-10">
+					<h1>Retos 1</h1>
+					<h2>Retos Algorítmicos</h2>
+					<div class="row">
+						<div class="col-md-3">
+							<img class="img-fluid rounded" src="img/cosmogram.jpg" />
+						</div>
+						<div class="col-md-9">
+							<p>
+								El símbolo maya que representa al universo es el "cosmograma". La figura del diamante en el centro
+								representa al sol.
+							</p>
+							<p><a href="../static/csnap_pro/csdt/snap.html#open:offline/whte/challenge_1.xml">Abrir aplicación</a></p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3">
+							<img class="img-fluid rounded" src="img/quechuandesign.png" />
+						</div>
+						<div class="col-md-9">
+							<p>
+								Esta cruz de 12 esquinas aparece en algunos diseños prehispánicos Incas, aunque no se conoce su
+								significado simbólico exacto. Si se supone que la figura blanca es un círculo, este debe verse más
+								redondeado a medida que se incrementa el tamaño del diseño. El reto es intentar calcular la colocación
+								de las cuentas para una versión de este diseño mayor tamaño.
+							</p>
+							<p><a href="../static/csnap_pro/csdt/snap.html#open:offline/whte/challenge_2.xml">Abrir aplicación</a></p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-2">
+							<img class="img-fluid rounded" src="img/macaws.png" />
+						</div>
+						<div class="col-md-10">
+							<p>
+								Estas cuentas azules crean un ángulo muy empinado. Este diseño del pueblo Embera Chamí en Colombia
+								muestra las colas de dos guacamayas. ¿Cuál es la pendiente? ¿Cómo se compara esta con la pendiente del
+								cosmograma Maya? ¿Por qué podría ser más común el ángulo del cosmograma Maya(desde un punto de vista
+								matemático)?
+							</p>
+							<p>
+								<a href="../static/csnap_pro/csdt/snap.html#open:offline/whte/challenge_3a.xml">Abrir aplicación</a>
+							</p>
+							<p>
+								<a href="../static/csnap_pro/csdt/snap.html#open:offline/whte/challenge_3b.xml"
+									>Abrir aplicación (versión sin "loops")</a
+								>
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-2">
+							<img class="img-fluid rounded" src="img/birds.png" />
+						</div>
+						<div class="col-md-10">
+							<p></p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-2">
+							<img class="img-fluid rounded" src="img/emberachami.png" />
+						</div>
+						<div class="col-md-10">
+							<p>
+								Este diseño es del pueblo colombiano Embera Chamí. Se le llama la estrella del creación a la figura azul
+								que está en el centro. ¿Cómo podría recrear esta utilizando triángulos? ¿Podría formar esta otras
+								figuras? ¿Cómo podría ayudar la iteración a simular estos gradientes (difuminados) de colores y
+								sombreado?
+							</p>
+							<p><a href="../static/csnap_pro/csdt/snap.html#open:offline/whte/challenge_4.xml">Abrir aplicación</a></p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<h2>Retos Estadísticos</h2>
+							<p>
+								Usted ha sido contratado por el Museo Metropolitano de Arte (abreviado como "Met") en la ciudad de Nueva
+								York para determinar la autenticidad de las nuevas adquisiciones de trabajo en cuentas latinoamericano.
+								Su trabajo es crear una simulación de una pieza auténtica y original, para después comparar la variación
+								de color en la simulación a la variación presente en las piezas nuevamente adquiridas.
+							</p>
+							<ol>
+								<li>
+									<p>
+										La primera columna de la simulación ha sido completada. El rango de colores de esta columna es
+										bastante estrecho (de 0 a 20). Ahora necesitamos agregar dos o tres columnas, al igual que ampliar
+										el rango de colores, para hacer un diseño más parecido a la muestra del museo. No olviden guardar su
+										trabajo, y anotar el rango de colores que utilizaron.
+									</p>
+									<p>
+										<a href="../static/csnap_pro/csdt/snap.html#open:offline/whte/challenge_5.xml">Abrir aplicación</a>
+									</p>
+								</li>
+								<li>
+									Ahora que conocemos el rango de colores, podemos calcular la varianza. Cuando se tiene un conjunto de
+									números consecutivos, la media es (mayor + menor)/2. Podemos estimar la varianza para el nuevo rango
+									de colores que creamos utilizando la fórmula para estimar la media, en conjunto con el siguiente
+									proyecto:
+									<p>
+										<a href="../static/csnap_pro/csdt/snap.html#open:offline/whte/challenge_6.xml">Abrir aplicación</a>
+									</p>
+									Este programa incluye el cálculo de la suma de cuadrados. Ahora necesitamos agregar un bloque para
+									poder calcular la varianza.
+									<p>Pasos para calcular la varianza de un conjunto de valores numéricos:</p>
+									<ol>
+										<li>Calcular la media de la muestra (utilizando la fórmula (máximo+mínimo)/2)</li>
+										<li>Restar la media a cada elemento del conjunto.</li>
+										<li>Elevar cada resultado al cuadrado.</li>
+										<li>Encontrar la suma de los valores cuadrados.</li>
+										<li>Dividir entre n-1, siendo n el número de elementos del conjunto.</li>
+									</ol>
+								</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

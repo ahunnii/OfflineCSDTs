@@ -1,0 +1,7 @@
+- You can access more options by right clicking the blocks.
+- Right click "go to bead x" and select "duplicate"
+- We are going to draw over the white beads, by creating a second diamond.
+- Change the new "go to bead y" position to 6.
+- Change the new "translate y" value to -6.
+- Change the new "iso triangle" iterations to 7.
+- This will make a smaller diamond inside your existing white diamond.

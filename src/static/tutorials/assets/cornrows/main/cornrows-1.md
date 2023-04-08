@@ -1,0 +1,7 @@
+- Click and hold the flag block, and move your mouse to the right
+- The &quot;flag&quot; block controls the start of the program
+- Now you can write a short program to place a plait
+- The &quot;go to&quot; block will tell the program where to start on the screen
+- The &quot;set size&quot; block will set the size of the plait
+- The &quot;clear&quot; block will erase all the prior drawings
+- The &quot;set angle&quot; block will set the angle of the plait

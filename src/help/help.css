@@ -1,0 +1,51 @@
+html {
+  scroll-behavior: smooth;
+}
+.smaller {
+  max-width: 100%;
+  height: auto;
+}
+
+#helpSidenav {
+  width: 175px;
+}
+@media (min-width: 990px) and (max-width: 1199px) {
+  #helpSidenav {
+    width: 155px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  #helpSidenav {
+    padding-top: 25px;
+    position: fixed;
+    width: 175px;
+  }
+}
+
+#helpSidenav a:hover {
+  text-decoration: none;
+}
+
+#helpSidenav > .sublink {
+  border: 0 solid #e2e8f0;
+  color: #8c8991 !important;
+  font-weight: 500 !important;
+  text-align: -webkit-match-parent;
+  list-style: none;
+  font-size: 0.85rem;
+  -webkit-font-smoothing: antialiased !important;
+  pointer-events: auto;
+  padding-right: 0.5rem;
+  padding-left: 1.5rem;
+  padding-top: 3.8px;
+  padding-bottom: 3.8px;
+}
+
+#helpSidenav > .sublink > a.active > div {
+  color: #4096e2;
+}
+
+section {
+  scroll-margin-top: 5rem;
+}

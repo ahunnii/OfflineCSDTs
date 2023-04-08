@@ -1,0 +1,1 @@
+With this concept of functions, you can create another circle of diamonds. With this, you will also need ![""](./img/translate_height.png) This block takes two values, the units you want to translate(slide) by, and the direction. This will slide your sprite outwards, to allow you to create a second ring.

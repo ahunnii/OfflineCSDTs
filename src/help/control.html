@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+	<title>Control | CSDT</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Font Awesome CSS -->
+		<link rel="stylesheet" href="../css/fontawesome.css" />
+		<!-- Bootstrap 4 CSS -->
+		<link rel="stylesheet" href="../css/bootstrap-4.css" type="text/css" />
+		<!-- Global CSS -->
+		<link rel="stylesheet" href="../css/main.css" />
+		<!-- This tools CSS -->
+		<link rel="stylesheet" href="help.css" />
+
+		<!-- jQuery 3.4.1 -->
+		<script src="../js/jquery-3.4.1.js" type="application/javascript"></script>
+		<!-- Latest compiled and minified JavaScript for Bootstrap -->
+		<script src="../js/popper.js" type="application/javascript"></script>
+		<script src="../js/bootstrap-4.js" type="application/javascript"></script>
+		<!-- Plyr CSS -->
+		<link rel="stylesheet" href="../css/plyr.css" />
+		<!-- Video Player (plyr)-->
+		<script src="../js/plyr.js"></script>
+		<!-- Main JavaScript -->
+		<script src="../js/static-cloud.js"></script>
+		<script src="../js/main.js"></script>
+	</head>
+	<body>
+		<nav class="navbar fixed-top navbar-expand-lg navbar-dark" aria-label="Main navigation">
+			<div class="container">
+				<div class="navbar-brand">
+					<a href="#!">
+						<img src="../img/nav/nsf.gif" width="40" height="40" class="d-inline-block align-top" alt="NSF Logo" />
+					</a>
+					<a href="../index.html">
+						<img src="../img/nav/logo.svg" width="100" height="40" class="d-inline-block align-top" alt="CSDT Logo" />
+					</a>
+				</div>
+				<!-- Toggle for Mobile Navigation -->
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- Navigation Link Container -->
+				<div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+					<ul class="navbar-nav d-flex">
+						<li class="nav-item align-self-center">
+							<a class="nav-link" href="../publications.html">Publications</a>
+						</li>
+						<li class="nav-item align-self-center">
+							<a class="nav-link" href="../about.html">About</a>
+						</li>
+					</ul>
+					<ul class="navbar-nav d-flex">
+						<li class="nav-item align-self-center">
+							<span class="nav-link">Offline Version 1.0.0</span>
+						</li>
+						<li class="nav-item align-self-center" id="user-divide"></li>
+						<li class="nav-item align-self-center" id="user-help">
+							<a class="nav-link align-self-center" href="../help/index.html">
+								<i class="far fa-question-circle"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Progress Bar -->
+			<div class="progress-container fixed-top d-none d-sm-none d-lg-block">
+				<div class="progress-bar" id="myBar"></div>
+			</div>
+		</nav>
+		<!-- Mobile Navigation -->
+		<div class="fixed-top d-block d-lg-none" style="top: 65px; z-index: 1">
+			<div class="collapse" id="sectionNavigation">
+				<div class="bg-light px-4 pt-2 h-75 overflow-scroll">
+					<div id="mobileNavigation" class="navbar-nav d-block d-sm-block d-lg-none" role="mobile-container"></div>
+				</div>
+			</div>
+			<nav class="navbar navbar-dark bg-dark navbar__mobile--under" aria-label="Mobile navigation">
+				<div class="container">
+					<span>Control</span>
+					<span class="nav-item bar align-self-center"></span>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#sectionNavigation"
+						aria-controls="sectionNavigation"
+						aria-expanded="false"
+						aria-label="Toggle tool navigation">
+						Jump to Section
+					</button>
+				</div>
+			</nav>
+		</div>
+		<main class="container">
+			<div class="row justify-content-between">
+				<div class="col-lg-2 d-none d-lg-flex">
+					<ul id="sidenav" class="list-group list-group-flush">
+						<li class="mainlink background">
+							<a href="index.html">
+								<div>Getting Started</div>
+							</a>
+						</li>
+						<li class="mainlink mainlink-extended spacer">
+							<a href="teachers.html">
+								<div>Teacher's Guide</div>
+							</a>
+						</li>
+
+						<li class="mainlink mainlink-extended spacer">
+							<a href="faq.html">
+								<div>FAQs</div>
+							</a>
+						</li>
+						<li class="mainlink spacer">
+							<a href="colors.html">
+								<div>Colors</div>
+							</a>
+						</li>
+						<li class="mainlink mainlink-extended spacer">
+							<a href="common_blocks.html">
+								<div>Common Blocks</div>
+							</a>
+						</li>
+						<li class="mainlink spacer">
+							<a href="blocks.html">
+								<div>Blocks Reference</div>
+							</a>
+						</li>
+
+						<li class="teaching_link sublink">
+							<a href="motion.html">
+								<div>Motion</div>
+							</a>
+						</li>
+						<li class="teaching_link sublink">
+							<a href="looks.html">
+								<div>Looks</div>
+							</a>
+						</li>
+						<li class="teaching_link sublink">
+							<a href="sound.html">
+								<div>Sound</div>
+							</a>
+						</li>
+						<li class="teaching_link sublink">
+							<a href="pen.html">
+								<div>Pen</div>
+							</a>
+						</li>
+						<li class="teaching_link sublink active">
+							<a href="control.html">
+								<div>Control</div>
+							</a>
+						</li>
+						<li class="teaching_link sublink">
+							<a href="sensing.html">
+								<div>Sensing</div>
+							</a>
+						</li>
+						<li class="teaching_link sublink">
+							<a href="operators.html">
+								<div>Operators</div>
+							</a>
+						</li>
+						<li class="teaching_link sublink">
+							<a href="variables.html">
+								<div>Variables</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-10">
+					<h1>Control Blocks</h1>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/whenclicked.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name:Flag Block or Hat Block</li>
+								<li>Type: Control</li>
+								<li>Description: Runs the blocks that are attached when clicked.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/whenspacekeypressed.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: When Space Key Pressed Block</li>
+								<li>Type: Command</li>
+								<li>
+									Description: This block listens for the event in the drop down box and then executes the attached
+									blocks. The event can be 'any key', 'up arrow', 'down arrow', 'right arrow', 'left arrow', 'space bar'
+									pressed, or the letters 'a' to 'z', or the numbers '0', to '9'.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/wheniamclicked.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: When I am clicked Block</li>
+								<li>Type: Command</li>
+								<li>
+									Description: This block listens for the event in the drop down box and then executes the attached
+									blocks. The event can be 'clicked', 'pressed', 'dropped', 'mouse-entered', 'mouse-departed',
+									'scrolled-up', 'scrolled-down', and 'stopped'.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/when.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: When Block</li>
+								<li>Type: Command</li>
+								<li>
+									Description: This block executes the attached blocks when the logical condition inserted evaluates to
+									true.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/message.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Message Block</li>
+								<li>Type: Reporter</li>
+								<li>Description: This block contains the value of message being passed from one script to another.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/ifthenelse.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: If Then Else Block</li>
+								<li>Type: Reporter</li>
+								<li>
+									Description: This block returns the value in the first input box if the logical expression inserted
+									evaluates to True or the second input box if it evaluates to false.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/call.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Call Block</li>
+								<li>Type: Command</li>
+								<li>Description: This block calls a named function with optional input values.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/whenireceive.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: When I Receive Block</li>
+								<li>Type: Control</li>
+								<li>Description: This block runs the attached blocks when broadcast is called.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/broadcast.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Broadcast Block</li>
+								<li>Type: Control</li>
+								<li>
+									Description: This block tells other scripts to run. Broadcast runs those scripts and continues
+									running.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/broadcastandwait.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Broadcast and Wait Block</li>
+								<li>Type: Control</li>
+								<li>
+									Description: This block broadcasts to tell other scripts to run and waits for those other scripts to
+									finish before continuing.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/sendto.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Send To Block</li>
+								<li>Type: Command</li>
+								<li>
+									Description: This block sends a named message designated in the first drop down box, to an object
+									designated in the second drop down box.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/warp.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Warp Block</li>
+								<li>Type: Control Block</li>
+								<li>
+									Description: This block quickly runs the enclosed blocks without writing to the screen until execution
+									is complete.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/waitsecs.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Wait Block</li>
+								<li>Type: Control Block</li>
+								<li>
+									Description: This block pauses program execution by the number of seconds entered. This block is
+									important for animation projects.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/waituntil.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Wait Until Block</li>
+								<li>Type: Command</li>
+								<li>
+									Description: This block pauses execution until the logical expression inserted evaluates to True.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/forever.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Forever Block</li>
+								<li>Type: Control</li>
+								<li>
+									Description: This block repeats the code contained inside of it forever. Use this block to
+									continuously run the enclosed code.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/repeat.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Repeat Block</li>
+								<li>Type: Control</li>
+								<li>
+									Description: This block will repeat the enclosed code a number of times by changing the number to the
+									number of repeats. Use this block to run code a certain number of times.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/repeatuntil.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Repeat Until Block</li>
+								<li>Type: Control</li>
+								<li>
+									Description: This block repeats the code contained inside of it until a logical condition is met. Use
+									this block to re-run code until a logical condition becomes false.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/foriequals1to10.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: For i Equals Block</li>
+								<li>Type: Command</li>
+								<li>
+									Description: This block iterates through the enclosed code blocks until the counter i reaches 10. Note
+									this block requires that the user increase i within the code loop.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/if.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: If Block</li>
+								<li>Type: Command</li>
+								<li>
+									Description: This block conditionally iterates through the enclosed blocks if the logical condition at
+									the top of the block evaluates to True.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/ifelse.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name:If Else Block</li>
+								<li>Type: Command</li>
+								<li>
+									Description: This block conditionally iterates through the enclosed blocks if the logical condition at
+									the top of the block evaluates to True. If it is not true, it will iterate through the enclosed blocks
+									following the 'else'.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/report.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Report Block</li>
+								<li>Type: Command</li>
+								<li>Description: This block returns the value entered into the input square.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/stopall.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Stop All Block</li>
+								<li>Type: Command</li>
+								<li>
+									Description: This block stops script execution as indicated in the drop down box. The stop options
+									include 'all', 'this script', 'this block', 'all but this script', and 'other scripts in sprite'.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img.xml.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Run Block</li>
+								<li>Type: Control</li>
+								<li>
+									Description: Runs a set of blocks passed as a variable or in a ring. Useful for passing functions as
+									variables.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/launch.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Launch Block</li>
+								<li>Type: Command</li>
+								<li>
+									Description: This block launches the execution of a named function with the optional input names it
+									defines.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/tellto.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Tell To Block</li>
+								<li>Type: Command</li>
+								<li>Description: This block sends a named object to a named function with optional input names.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/askfor.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Ask For Block</li>
+								<li>Type: Reporter</li>
+								<li>Description:</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img.xmlwcontinuation.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name:Run With Continuation Block</li>
+								<li>Type: Command</li>
+								<li>Description:</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/callwcontinuation.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Call With Continuation Block</li>
+								<li>Type: Reporter</li>
+								<li>Description:</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/whenIstartasaclone.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: When I Start As A Clone Block</li>
+								<li>Type: Command</li>
+								<li>Description:</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/createacloneofmyself.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Create A Clone Block</li>
+								<li>Type: Command</li>
+								<li>Description:</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/anewcloneofmyself.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: A New Clone Of Block</li>
+								<li>Type: Reporter</li>
+								<li>Description:</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/deletethisclone.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Delete This Clone Block</li>
+								<li>Type: Command</li>
+								<li>Description:</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/pauseall.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Pause All Block</li>
+								<li>Type: Command</li>
+								<li>Description:</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

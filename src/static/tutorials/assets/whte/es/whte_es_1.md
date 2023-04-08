@@ -1,0 +1,5 @@
+- Para iniciar el programa primero, usamos "cuando se pulse". Cualquier cosa adjunta será ejecutada.
+- "Borrar" elimina los dibujos anteriores.
+- Para establecer la posición X e Y, usamos "ir a la cuenta x" e "ir a la cuenta y" respectivamente
+- Para establecer el ángulo, usamos "apuntar hacia el ángulo"
+- Para ejecutar su programa, haga clic en la bandera verde sobre el escenario.

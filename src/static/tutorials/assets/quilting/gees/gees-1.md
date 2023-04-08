@@ -1,0 +1,3 @@
+- Drag the ![when clicked](./img/whenClicked_block.png) control block to the right (click and hold while moving the mouse). This block runs your code. You start the program by clicking on the green flag, located above the stage or within the block itself.
+- You can clear the stage by using a ![clear](./img/clear_block.png) block. This block is a must when creating your quilt. It gives you a fresh start every time you run your code!
+- You can position your sprite by using ![go to](./img/goTo.png) Based on a cartesian grid, you can give this block two values (x and y). With this, you can move your sprite anywhere on the stage. To find exact coordinates, hover your mouse over the stage. Below the stage, you can see the coordinates appear.

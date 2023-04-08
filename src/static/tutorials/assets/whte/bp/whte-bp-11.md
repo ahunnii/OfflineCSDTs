@@ -1,0 +1,5 @@
+- Quase terminado! Vamos encerrar nossos blocos anteriores com mais uma "repetição".
+- Adicione o último bloco "set" e o bloco "repeat" ao novo bloco "repeat". Defina o número de iterações como 2.
+- Na parte inferior do último bloco "repetir", adicione um bloco "ir para a conta x" e "ir para a conta y".
+- Defina a posição y para 11.
+- Bata na bandeira verde para ver seu desenho finalizado!

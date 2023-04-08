@@ -1,0 +1,4 @@
+- Let's create a diamond next.
+- We are going to use "translate in y for x beads" to move the second triangle down 11 beads. Input -11 for the beads.
+- Then, attach "iso triangle".
+- We are adding 1 bead every 1 row for 12 iterations in the +y direction

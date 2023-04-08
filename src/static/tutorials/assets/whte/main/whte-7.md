@@ -1,0 +1,6 @@
+- We are going to repeat our new lines with "repeat".
+- Anything inside the "repeat" block will be affected.
+- Move the 'line' block into "repeat"
+- Add a "rotate x degrees" block to rotate the line 90 degrees.
+- Set the "repeat" to have 4 iterations.
+- This will repeat the line 4 times, each time rotating the line by 90 degrees.

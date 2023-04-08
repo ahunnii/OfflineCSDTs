@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+	<title>Motion | CSDT</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Font Awesome CSS -->
+		<link rel="stylesheet" href="../css/fontawesome.css" />
+		<!-- Bootstrap 4 CSS -->
+		<link rel="stylesheet" href="../css/bootstrap-4.css" type="text/css" />
+		<!-- Global CSS -->
+		<link rel="stylesheet" href="../css/main.css" />
+		<!-- This tools CSS -->
+		<link rel="stylesheet" href="help.css" />
+
+		<!-- jQuery 3.4.1 -->
+		<script src="../js/jquery-3.4.1.js" type="application/javascript"></script>
+		<!-- Latest compiled and minified JavaScript for Bootstrap -->
+		<script src="../js/popper.js" type="application/javascript"></script>
+		<script src="../js/bootstrap-4.js" type="application/javascript"></script>
+		<!-- Plyr CSS -->
+		<link rel="stylesheet" href="../css/plyr.css" />
+		<!-- Video Player (plyr)-->
+		<script src="../js/plyr.js"></script>
+		<!-- Main JavaScript -->
+		<script src="../js/static-cloud.js"></script>
+		<script src="../js/main.js"></script>
+	</head>
+	<body>
+		<nav class="navbar fixed-top navbar-expand-lg navbar-dark" aria-label="Main navigation">
+			<div class="container">
+				<div class="navbar-brand">
+					<a href="#!">
+						<img src="../img/nav/nsf.gif" width="40" height="40" class="d-inline-block align-top" alt="NSF Logo" />
+					</a>
+					<a href="../index.html">
+						<img src="../img/nav/logo.svg" width="100" height="40" class="d-inline-block align-top" alt="CSDT Logo" />
+					</a>
+				</div>
+				<!-- Toggle for Mobile Navigation -->
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- Navigation Link Container -->
+				<div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+					<ul class="navbar-nav d-flex">
+						<li class="nav-item align-self-center">
+							<a class="nav-link" href="../publications.html">Publications</a>
+						</li>
+						<li class="nav-item align-self-center">
+							<a class="nav-link" href="../about.html">About</a>
+						</li>
+					</ul>
+					<ul class="navbar-nav d-flex">
+						<li class="nav-item align-self-center">
+							<span class="nav-link">Offline Version 1.0.0</span>
+						</li>
+						<li class="nav-item align-self-center" id="user-divide"></li>
+						<li class="nav-item align-self-center" id="user-help">
+							<a class="nav-link align-self-center" href="../help/index.html">
+								<i class="far fa-question-circle"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Progress Bar -->
+			<div class="progress-container fixed-top d-none d-sm-none d-lg-block">
+				<div class="progress-bar" id="myBar"></div>
+			</div>
+		</nav>
+		<!-- Mobile Navigation -->
+		<div class="fixed-top d-block d-lg-none" style="top: 65px; z-index: 1">
+			<div class="collapse" id="sectionNavigation">
+				<div class="bg-light px-4 pt-2 h-75 overflow-scroll">
+					<div id="mobileNavigation" class="navbar-nav d-block d-sm-block d-lg-none" role="mobile-container"></div>
+				</div>
+			</div>
+			<nav class="navbar navbar-dark bg-dark navbar__mobile--under" aria-label="Mobile navigation">
+				<div class="container">
+					<span>Motion</span>
+					<span class="nav-item bar align-self-center"></span>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#sectionNavigation"
+						aria-controls="sectionNavigation"
+						aria-expanded="false"
+						aria-label="Toggle tool navigation">
+						Jump to Section
+					</button>
+				</div>
+			</nav>
+		</div>
+		<main class="container">
+			<div class="row justify-content-between">
+				<div class="col-lg-2 d-none d-lg-flex">
+					<ul id="sidenav" class="list-group list-group-flush">
+						<li class="mainlink background">
+							<a href="index.html">
+								<div>Getting Started</div>
+							</a>
+						</li>
+						<li class="mainlink mainlink-extended spacer">
+							<a href="teachers.html">
+								<div>Teacher's Guide</div>
+							</a>
+						</li>
+
+						<li class="mainlink mainlink-extended spacer">
+							<a href="faq.html">
+								<div>FAQs</div>
+							</a>
+						</li>
+						<li class="mainlink spacer">
+							<a href="colors.html">
+								<div>Colors</div>
+							</a>
+						</li>
+						<li class="mainlink mainlink-extended spacer">
+							<a href="common_blocks.html">
+								<div>Common Blocks</div>
+							</a>
+						</li>
+						<li class="mainlink spacer">
+							<a href="blocks.html">
+								<div>Blocks Reference</div>
+							</a>
+						</li>
+
+						<li class="teaching_link sublink active">
+							<a href="motion.html">
+								<div>Motion</div>
+							</a>
+						</li>
+						<li class="teaching_link sublink">
+							<a href="looks.html">
+								<div>Looks</div>
+							</a>
+						</li>
+						<li class="teaching_link sublink">
+							<a href="sound.html">
+								<div>Sound</div>
+							</a>
+						</li>
+						<li class="teaching_link sublink">
+							<a href="pen.html">
+								<div>Pen</div>
+							</a>
+						</li>
+						<li class="teaching_link sublink">
+							<a href="control.html">
+								<div>Control</div>
+							</a>
+						</li>
+						<li class="teaching_link sublink">
+							<a href="sensing.html">
+								<div>Sensing</div>
+							</a>
+						</li>
+						<li class="teaching_link sublink">
+							<a href="operators.html">
+								<div>Operators</div>
+							</a>
+						</li>
+						<li class="teaching_link sublink">
+							<a href="variables.html">
+								<div>Variables</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-10">
+					<h1>Motion Blocks</h1>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/changexby.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Change X By Block</li>
+								<li>Type: Command</li>
+								<li>Description: Adds the input parameter to the value of X.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/changeyby.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Change Y By Block</li>
+								<li>Type: Command</li>
+								<li>Description: Adds the input parameter to the value of Y.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/glidesecstoxy.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Glide Seconds to XY Block</li>
+								<li>Type: Command</li>
+								<li>
+									Description: Moves to X and Y position, smoothly traversing from current position, over taking the
+									number of seconds to do so stated in the secs parameter.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/gotorandomposition.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Go To Block</li>
+								<li>Type: Command</li>
+								<li>
+									Description: Moves current position to a random position on the stage. Drop down also allows for go to
+									mouse-pointer and center.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/gotoxy.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Go To XY Block</li>
+								<li>Type: Command</li>
+								<li>Description: Changes position of current object to the location on the Stage given by X and Y.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/ifonedgebounce.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: If on edge, bounce Block</li>
+								<li>Type: Command</li>
+								<li>Description:</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/movesteps.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Move Steps Block</li>
+								<li>Type: Command</li>
+								<li>Description: Move number of steps given as parameter, in the current direction.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/pointatangle.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Point at Angle Block</li>
+								<li>Type: Command</li>
+								<li>Description: Changes the current direction angle to the input parameter.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/pointtowardsmouse-pointer.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Point Towards Block</li>
+								<li>Type: Command</li>
+								<li>
+									Description: Changes the current direction to point towards the mouse-pointer. Drop down options
+									include mouse-pointer, random position, and center.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/rotatebydegrees.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Rotate by Degrees</li>
+								<li>Type: Command</li>
+								<li>
+									Description: This block rotates a sprite by the degrees entered, on the stage. Use this block to
+									change a sprite's directions relative to its previous direction.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/setxto.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Set X to Block</li>
+								<li>Type: Command</li>
+								<li>Description: Changes X value of the current location to be input parameter.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/setyto.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Set Y to Block</li>
+								<li>Type: Command</li>
+								<li>Description: Changes Y value of the current location to be input parameter</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/translatebyofwidth.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Translate By Block</li>
+								<li>Type: Command</li>
+								<li>
+									Description: This block moves a sprite on the stage by a percentage of its width or height. Use this
+									block to move a sprite relative to its previous position.
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

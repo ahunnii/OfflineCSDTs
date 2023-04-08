@@ -1,0 +1,3 @@
+- A trick to the software is that you can break up your code, using a concept of Functions. You can learn more about functions in the functions tutorial, but the main thing to know is that you can break up your code to manageable chunks. This avoids the need to scroll and allows more control over the flow of your code!
+- You create a function by first broadcasting a message, using ![""](./img/broadcast.png) This will broadcast the name of a function to be executed.
+- You name a chunk of code as a function by using ![""](./img/receive.png) With this block, if any ![""](./img/broadcast.png) blocks calls out a specific message, it will execute any code attached to it.

@@ -1,0 +1,6 @@
+- Agora vamos criar algumas linhas.
+- Duplique os blocos "ir para a conta x", "ir para a conta y", "apontar para o ângulo".
+- A posição y deve ser -11 e o ângulo deve ser -45 graus.
+- Atualize o último bloco de brilho para 0.
+- Use um bloco de "linha" com um comprimento de cordão de 6.
+- Isso criará uma linha de contas com 6 contas de comprimento.

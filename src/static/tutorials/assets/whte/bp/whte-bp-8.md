@@ -1,0 +1,7 @@
+- As variáveis ​​são usadas para manter e manipular valores.
+- Vamos criar um para atualizar programaticamente o comprimento de nossa linha.
+- Clique no botão "Criar variável".
+- Dê um nome à sua variável. Nós estamos indo para 'comprimento'.
+- Você pode encontrar sua variável à esquerda. Você pode substituir o comprimento no bloco "linha" pela variável.
+- Use o bloco "definir variável" para definir um comprimento de valor inicial. Defina-o como 6.
+- Use o bloco "update variables" dentro do bloco "repeat" para atualizar a variável em -1 a cada iteração.

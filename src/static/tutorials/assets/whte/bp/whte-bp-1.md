@@ -1,0 +1,6 @@
+- Para inicializar o programa, arraste um bloco "Quando clicado" para a área de script. Qualquer coisa anexada a ele será executada.
+- Em seguida, conecte um bloco "Clear". Limpa os desenhos anteriores do palco.
+- O bloco "ir para talão x" atribui a posição x.
+- O bloco "go to bead y" atribui a posição y.
+- O bloco "ponto no ângulo" atribui o ângulo.
+- Para executar o programa, clique na bandeira verde acima do palco.

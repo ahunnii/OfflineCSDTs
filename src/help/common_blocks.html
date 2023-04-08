@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+	<title>Common Blocks | CSDT</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Font Awesome CSS -->
+		<link rel="stylesheet" href="../css/fontawesome.css" />
+		<!-- Bootstrap 4 CSS -->
+		<link rel="stylesheet" href="../css/bootstrap-4.css" type="text/css" />
+		<!-- Global CSS -->
+		<link rel="stylesheet" href="../css/main.css" />
+		<!-- This tools CSS -->
+		<link rel="stylesheet" href="help.css" />
+
+		<!-- jQuery 3.4.1 -->
+		<script src="../js/jquery-3.4.1.js" type="application/javascript"></script>
+		<!-- Latest compiled and minified JavaScript for Bootstrap -->
+		<script src="../js/popper.js" type="application/javascript"></script>
+		<script src="../js/bootstrap-4.js" type="application/javascript"></script>
+		<!-- Plyr CSS -->
+		<link rel="stylesheet" href="../css/plyr.css" />
+		<!-- Video Player (plyr)-->
+		<script src="../js/plyr.js"></script>
+		<!-- Main JavaScript -->
+		<script src="../js/static-cloud.js"></script>
+		<script src="../js/main.js"></script>
+	</head>
+	<body>
+		<nav class="navbar fixed-top navbar-expand-lg navbar-dark" aria-label="Main navigation">
+			<div class="container">
+				<div class="navbar-brand">
+					<a href="#!">
+						<img src="../img/nav/nsf.gif" width="40" height="40" class="d-inline-block align-top" alt="NSF Logo" />
+					</a>
+					<a href="../index.html">
+						<img src="../img/nav/logo.svg" width="100" height="40" class="d-inline-block align-top" alt="CSDT Logo" />
+					</a>
+				</div>
+				<!-- Toggle for Mobile Navigation -->
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- Navigation Link Container -->
+				<div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+					<ul class="navbar-nav d-flex">
+						<li class="nav-item align-self-center">
+							<a class="nav-link" href="../publications.html">Publications</a>
+						</li>
+						<li class="nav-item align-self-center">
+							<a class="nav-link" href="../about.html">About</a>
+						</li>
+					</ul>
+					<ul class="navbar-nav d-flex">
+						<li class="nav-item align-self-center">
+							<span class="nav-link">Offline Version 1.0.0</span>
+						</li>
+						<li class="nav-item align-self-center" id="user-divide"></li>
+						<li class="nav-item align-self-center" id="user-help">
+							<a class="nav-link align-self-center" href="../help/index.html">
+								<i class="far fa-question-circle"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Progress Bar -->
+			<div class="progress-container fixed-top d-none d-sm-none d-lg-block">
+				<div class="progress-bar" id="myBar"></div>
+			</div>
+		</nav>
+		<!-- Mobile Navigation -->
+		<div class="fixed-top d-block d-lg-none" style="top: 65px; z-index: 1">
+			<div class="collapse" id="sectionNavigation">
+				<div class="bg-light px-4 pt-2 h-75 overflow-scroll">
+					<div id="mobileNavigation" class="navbar-nav d-block d-sm-block d-lg-none" role="mobile-container"></div>
+				</div>
+			</div>
+			<nav class="navbar navbar-dark bg-dark navbar__mobile--under" aria-label="Mobile navigation">
+				<div class="container">
+					<span>Common Blocks</span>
+					<span class="nav-item bar align-self-center"></span>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#sectionNavigation"
+						aria-controls="sectionNavigation"
+						aria-expanded="false"
+						aria-label="Toggle tool navigation">
+						Jump to Section
+					</button>
+				</div>
+			</nav>
+		</div>
+		<main class="container">
+			<div class="row justify-content-between">
+				<div class="col-lg-2 d-none d-lg-flex">
+					<ul id="sidenav" class="list-group list-group-flush">
+						<li class="mainlink background">
+							<a href="index.html">
+								<div>Getting Started</div>
+							</a>
+						</li>
+						<li class="mainlink mainlink-extended spacer">
+							<a href="teachers.html">
+								<div>Teacher's Guide</div>
+							</a>
+						</li>
+
+						<li class="mainlink mainlink-extended spacer">
+							<a href="faq.html">
+								<div>FAQs</div>
+							</a>
+						</li>
+						<li class="mainlink spacer">
+							<a href="colors.html">
+								<div>Colors</div>
+							</a>
+						</li>
+						<li class="mainlink mainlink-extended spacer active">
+							<a href="common_blocks.html">
+								<div>Common Blocks</div>
+							</a>
+						</li>
+						<li class="mainlink spacer">
+							<a href="blocks.html">
+								<div>Blocks Reference</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-10">
+					<h1>Commonly Used Blocks</h1>
+					<h2>Control Blocks</h2>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/whenclicked.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name:Flag Block or Hat Block</li>
+								<li>Type: Control</li>
+								<li>Description: Runs the blocks that are attached when clicked.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/waitsecs.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Wait Block</li>
+								<li>Type: Control Block</li>
+								<li>
+									Description: This block pauses program execution by the number of seconds entered. This block is
+									important for animation projects.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/repeat.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Repeat Block</li>
+								<li>Type: Control</li>
+								<li>
+									Description: This block will repeat the enclosed code a number of times by changing the number to the
+									number of repeats. Use this block to run code a certain number of times.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/repeatuntil.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Repeat Until Block</li>
+								<li>Type: Control</li>
+								<li>
+									Description: This block repeats the code contained inside of it until a logical condition is met. Use
+									this block to re-run code until a logical condition becomes false.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/ifelse.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name:If Else Block</li>
+								<li>Type: Command</li>
+								<li>
+									Description: This block conditionally iterates through the enclosed blocks if the logical condition at
+									the top of the block evaluates to True. If it is not true, it will iterate through the enclosed blocks
+									following the 'else'.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<h2>Pen Blocks</h2>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/clear.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Clear Block</li>
+								<li>Type: Command</li>
+								<li>Description: Removes all images and drawings from the stage.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/stamp.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Stamp Block</li>
+								<li>Type: Command</li>
+								<li>
+									Description: This block makes a copy of the current costume at the current location on the stage.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<h2>Looks Blocks</h2>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/setsizeto.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name:Set Size To Block</li>
+								<li>Type: Command</li>
+								<li>
+									Description: This block sets the current size of a sprite relative to it's full size. The input
+									parameter is a percentage. To make a sprite larger than its default size, use a value greater than
+									100, to make it smaller, use a value less than 100.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/setcoloreffectto.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Set Color Effect To Block</li>
+								<li>Type: Command</li>
+								<li>
+									Description: This block sets the current color to the input value. To know what color corresponds to
+									what number, check out the <a href="colors.html">Colors</a> help page.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/switchtocostume.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Switch To Costume Block</li>
+								<li>Type: Command</li>
+								<li>
+									Description: This block changes a sprites current costume to the costume chosen in the drop down
+									input.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/scalebyfactorpercent.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Scale by Factor</li>
+								<li>Type: Command</li>
+								<li>
+									Description: This block scales the costume by a percentage of the current size. Use this block to
+									change the image size on the stage bigger or smaller.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<h2>Motion Blocks</h2>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/pointatangle.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Point at Angle Block</li>
+								<li>Type: Command</li>
+								<li>Description: Changes the current direction angle to the input parameter.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/gotoxy.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Go To XY Block</li>
+								<li>Type: Command</li>
+								<li>Description: Changes position of current object to the location on the Stage given by X and Y.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/rotatebydegrees.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Rotate by Degrees</li>
+								<li>Type: Command</li>
+								<li>
+									Description: This block rotates a sprite by the degrees entered, on the stage. Use this block to
+									change a sprite's directions relative to its previous direction.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/translatebyofwidth.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul class="ulmatch">
+								<li>Name: Translate By Block</li>
+								<li>Type: Command</li>
+								<li>
+									Description: This block moves a sprite on the stage by a percentage of its width or height. Use this
+									block to move a sprite relative to its previous position.
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

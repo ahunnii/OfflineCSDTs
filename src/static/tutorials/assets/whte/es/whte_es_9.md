@@ -1,0 +1,4 @@
+- Vamos a repetir el código anterior 2 veces, utilizando otro bloque "repetir".
+- Modifique la "asignar" y el primer bloque "repetido" en el nuevo. Establezca el número de iteraciones en 2.
+- Use un bloque "girar" debajo de la primera "repetición" y configúrelo en -90.
+- Use un bloque "ir a la cuenta x" debajo de "rotar" para regresar al eje y.

@@ -1,0 +1,5 @@
+- Vamos controlar o brilho das contas.
+- Usaremos "definir o brilho para ".
+- 100 é branco puro, enquanto -100 é preto puro.
+- Começaremos com 0 como neutro.
+- Em seguida, defina-o para -25 para obter uma conta mais escura.

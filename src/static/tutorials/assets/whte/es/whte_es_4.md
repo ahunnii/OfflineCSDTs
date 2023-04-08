@@ -1,0 +1,4 @@
+- Controlemos el brillo.
+- 100 es blanco puro, mientras que -100 es negro puro.
+- Comenzaremos con 0 como neutro.
+- Luego ajústelo a -25 para obtener una cuenta más oscura.

@@ -1,0 +1,4 @@
+- Vamos criar um diamante a seguir.
+- Vamos usar "traduzir em y para x contas" para mover o segundo triângulo para baixo 11 contas. Digite -11 para as contas.
+- Em seguida, anexe "triângulo iso".
+- Estamos adicionando 1 cordão a cada 1 linha por 12 iterações na direção +y

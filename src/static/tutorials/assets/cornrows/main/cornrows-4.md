@@ -1,0 +1,3 @@
+- The braid should be curved to follow the shape of one's head
+- Drag the &quot;rotate&quot; block into the &quot;repeat&quot; block
+- Set the amount of rotation (larger numbers lead to tighter spirals)

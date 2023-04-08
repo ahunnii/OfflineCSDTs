@@ -1,0 +1,38 @@
+.card-project {
+  height: 100% !important;
+}
+
+.card-project > a:first-child {
+  height: 176px;
+  display: flex;
+}
+
+.card-project img {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.card-project div.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card-owner {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+  font-size: 0.75rem;
+}
+
+.project-card-description {
+  font-size: small;
+}
+
+.project-card-modified {
+  font-size: 0.75rem;
+  color: #9098a5;
+  margin-top: auto;
+}
+
+.project-card-title {
+  margin-bottom: 0.25rem;
+}

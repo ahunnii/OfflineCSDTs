@@ -1,0 +1,7 @@
+- Drag in a yellow 'Repeat \_' loop and connect it to the tail of our program
+- Set this outer loop to repeat 12 times. This means there are 12 rows of stitches.
+- We are going to drag another loop block inside the loop block we just put down. This is called a 'nested loop'
+- Make sure you drag the second loop body inside the outer loop body. Set this repeat to 20, because there are twenty stitches across the screen left to right
+- Nested loops are a good way to traverse dimensions. To travel one dimension (x), you need just one loop. To traverse two dimensions (x, y), you need a loop inside a loop, so that the outer loop traverses y and the inner loop traverses the x. Three loops inside each other traverse a 3D space, the x, y, and z.
+- Inside the nested loop, drag in a 'translate x by 1 stitches' block and set to 1. This moves right each inner loop iteration
+- Drag in the 'shift and stamp' block to actually make the stitch

@@ -1,0 +1,6 @@
+- Agora vamos criar uma variável para o nosso ângulo.
+- Clique no botão "Criar variável".
+- Dê um nome à sua variável. Nós estamos indo para 'ângulo'.
+- Adicione sua variável ao bloco "girar", substituindo 90 pela variável.
+- Use o bloco "definir variável" para definir um ângulo de valor inicial. Defina-o como 90.
+- Use o bloco "update variables" dentro do bloco "repeat" para atualizar a variável em -180 a cada iteração.

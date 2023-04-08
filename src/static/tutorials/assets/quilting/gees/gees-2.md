@@ -1,0 +1,2 @@
+- You can change what your sprite looks like! To do this, you will need to use ![switch costume](./img/switchcostume.png). With this, you can click on the block’s dropdown menu and select other costumes that are available in the current software.
+- Besides changing the ‘costume’ of your sprite, you can also change the size of your sprite. Using a ![set size](./img/size.png) block, you can change the size based on the original size of the costume the sprite is wearing. Larger numbers mean larger costumes, smaller numbers mean smaller costumes.

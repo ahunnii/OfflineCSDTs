@@ -1,0 +1,6 @@
+- Change our loop from 10 to 7 iterations
+- Add into the loop a blue `Point at angle __` block and set to zero
+- Add into the loop another loop block, and this time drag in the `circ` variable for the number of iterations by dropping it inside the oval where the number of iterations is stored. This means it will iterate the same number of times that the variable `circ` is set.
+- Inside the `circ` loop, add a blue `go to x: 0 y: 0` block and a blue `rotate by __ degrees` block`
+- Use a green math symbol, in this case the divide, and drop it into the blank value on the `rotate by` block
+- On the left side of the green divide oval, type in 360, and on the right side drop in the `circ` variable. This will divide 360 by the value of `circ` and rotate the stitch by that amount.

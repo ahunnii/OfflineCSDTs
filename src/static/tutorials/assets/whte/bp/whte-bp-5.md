@@ -1,0 +1,7 @@
+- Você pode acessar mais opções clicando com o botão direito nos blocos.
+- Clique com o botão direito do mouse em "ir para talão x" e selecione "duplicar"
+- Vamos desenhar sobre as contas brancas, criando um segundo diamante.
+- Altere a nova posição "ir para o talão y" para 6.
+- Altere o novo valor "translate y" para -6.
+- Altere as novas iterações do "triângulo iso" para 7.
+- Isso criará um diamante menor dentro do diamante branco existente.

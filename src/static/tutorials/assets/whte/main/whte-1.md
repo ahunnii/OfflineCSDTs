@@ -1,0 +1,6 @@
+- To initialize the program, drag a "When Clicked" block to the scripting area. Anything attached to it will run.
+- Next, connect a "Clear" block. It clears previous drawings from the stage.
+- The "go to bead x" block assigns the position x.
+- The "go to bead y" block assigns the position y.
+- The "point at angle" block assigns the angle.
+- To run the program, click the green flag above the stage.

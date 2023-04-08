@@ -1,0 +1,6 @@
+- We are now going to create a variable for our angle.
+- Click on the "Create Variable" button.
+- Give your variable a name. We are going to 'angle'.
+- Add your variable to the "rotate" block, replacing 90 with the variable.
+- Use the "set variable" block to set an initial value angle. Set it to 90.
+- Use the "update variable" block inside the "repeat" block to update the variable by -180 every iteration.

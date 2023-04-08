@@ -1,0 +1,2 @@
+- The last step of the quilt is to add the central element, the medicine wheel. The Anishinaabe use this to understand how the world is organized. Many things happen in circles, from the shape of a nest to the cycles of living creatures. And many things are divided into fours: the year has four seasons; the earth has four directions.
+- Adding a medicine wheel to the quilt just requires two blocks: ![""](./img/pointatblock.png) ![""](./img/switchcostume.png)

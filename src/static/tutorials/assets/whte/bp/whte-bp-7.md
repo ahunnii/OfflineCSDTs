@@ -1,0 +1,6 @@
+- Vamos repetir nossas novas linhas com "repetir".
+- Qualquer coisa dentro do bloco "repetir" será afetado.
+- Mova o bloco 'linha' para "repetir"
+- Adicione um bloco "girar x graus" para girar a linha em 90 graus.
+- Defina a "repetição" para ter 4 iterações.
+- Isso repetirá a linha 4 vezes, cada vez girando a linha em 90 graus.

@@ -1,0 +1,7 @@
+- Las variables se utilizan para mantener y manipular valores.
+- Vamos a crear uno para actualizar mediante programación la longitud de nuestra línea.
+- Haga clic en el botón "Declarar variable".
+- Dale un nombre a tu variable. Vamos a 'longitud'.
+- Puedes encontrar tu variable a la izquierda. Puede reemplazar la longitud en el bloque "línea" con la variable.
+- Use el bloque "asignar a x" para establecer una longitud de valor inicial. Establézcalo en 6.
+- Use el bloque "incrementar x variable" dentro del bloque "repetir" para actualizar la variable en -1 cada iteración.

@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+	<title>Operators | CSDT</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Font Awesome CSS -->
+		<link rel="stylesheet" href="../css/fontawesome.css" />
+		<!-- Bootstrap 4 CSS -->
+		<link rel="stylesheet" href="../css/bootstrap-4.css" type="text/css" />
+		<!-- Global CSS -->
+		<link rel="stylesheet" href="../css/main.css" />
+		<!-- This tools CSS -->
+		<link rel="stylesheet" href="help.css" />
+
+		<!-- jQuery 3.4.1 -->
+		<script src="../js/jquery-3.4.1.js" type="application/javascript"></script>
+		<!-- Latest compiled and minified JavaScript for Bootstrap -->
+		<script src="../js/popper.js" type="application/javascript"></script>
+		<script src="../js/bootstrap-4.js" type="application/javascript"></script>
+		<!-- Plyr CSS -->
+		<link rel="stylesheet" href="../css/plyr.css" />
+		<!-- Video Player (plyr)-->
+		<script src="../js/plyr.js"></script>
+		<!-- Main JavaScript -->
+		<script src="../js/static-cloud.js"></script>
+		<script src="../js/main.js"></script>
+	</head>
+	<body>
+		<nav class="navbar fixed-top navbar-expand-lg navbar-dark" aria-label="Main navigation">
+			<div class="container">
+				<div class="navbar-brand">
+					<a href="#!">
+						<img src="../img/nav/nsf.gif" width="40" height="40" class="d-inline-block align-top" alt="NSF Logo" />
+					</a>
+					<a href="../index.html">
+						<img src="../img/nav/logo.svg" width="100" height="40" class="d-inline-block align-top" alt="CSDT Logo" />
+					</a>
+				</div>
+				<!-- Toggle for Mobile Navigation -->
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- Navigation Link Container -->
+				<div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+					<ul class="navbar-nav d-flex">
+						<li class="nav-item align-self-center">
+							<a class="nav-link" href="../publications.html">Publications</a>
+						</li>
+						<li class="nav-item align-self-center">
+							<a class="nav-link" href="../about.html">About</a>
+						</li>
+					</ul>
+					<ul class="navbar-nav d-flex">
+						<li class="nav-item align-self-center">
+							<span class="nav-link">Offline Version 1.0.0</span>
+						</li>
+						<li class="nav-item align-self-center" id="user-divide"></li>
+						<li class="nav-item align-self-center" id="user-help">
+							<a class="nav-link align-self-center" href="../help/index.html">
+								<i class="far fa-question-circle"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Progress Bar -->
+			<div class="progress-container fixed-top d-none d-sm-none d-lg-block">
+				<div class="progress-bar" id="myBar"></div>
+			</div>
+		</nav>
+		<!-- Mobile Navigation -->
+		<div class="fixed-top d-block d-lg-none" style="top: 65px; z-index: 1">
+			<div class="collapse" id="sectionNavigation">
+				<div class="bg-light px-4 pt-2 h-75 overflow-scroll">
+					<div id="mobileNavigation" class="navbar-nav d-block d-sm-block d-lg-none" role="mobile-container"></div>
+				</div>
+			</div>
+			<nav class="navbar navbar-dark bg-dark navbar__mobile--under" aria-label="Mobile navigation">
+				<div class="container">
+					<span>Operators</span>
+					<span class="nav-item bar align-self-center"></span>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#sectionNavigation"
+						aria-controls="sectionNavigation"
+						aria-expanded="false"
+						aria-label="Toggle tool navigation">
+						Jump to Section
+					</button>
+				</div>
+			</nav>
+		</div>
+		<main class="container">
+			<div class="row justify-content-between">
+				<div class="col-lg-2 d-none d-lg-flex">
+					<ul id="sidenav" class="list-group list-group-flush">
+						<li class="mainlink background">
+							<a href="index.html">
+								<div>Getting Started</div>
+							</a>
+						</li>
+						<li class="mainlink mainlink-extended spacer">
+							<a href="teachers.html">
+								<div>Teacher's Guide</div>
+							</a>
+						</li>
+
+						<li class="mainlink mainlink-extended spacer">
+							<a href="faq.html">
+								<div>FAQs</div>
+							</a>
+						</li>
+						<li class="mainlink spacer">
+							<a href="colors.html">
+								<div>Colors</div>
+							</a>
+						</li>
+						<li class="mainlink mainlink-extended spacer">
+							<a href="common_blocks.html">
+								<div>Common Blocks</div>
+							</a>
+						</li>
+						<li class="mainlink spacer">
+							<a href="blocks.html">
+								<div>Blocks Reference</div>
+							</a>
+						</li>
+
+						<li class="teaching_link sublink">
+							<a href="motion.html">
+								<div>Motion</div>
+							</a>
+						</li>
+						<li class="teaching_link sublink">
+							<a href="looks.html">
+								<div>Looks</div>
+							</a>
+						</li>
+						<li class="teaching_link sublink">
+							<a href="sound.html">
+								<div>Sound</div>
+							</a>
+						</li>
+						<li class="teaching_link sublink">
+							<a href="pen.html">
+								<div>Pen</div>
+							</a>
+						</li>
+						<li class="teaching_link sublink">
+							<a href="control.html">
+								<div>Control</div>
+							</a>
+						</li>
+						<li class="teaching_link sublink">
+							<a href="sensing.html">
+								<div>Sensing</div>
+							</a>
+						</li>
+						<li class="teaching_link sublink active">
+							<a href="operators.html">
+								<div>Operators</div>
+							</a>
+						</li>
+						<li class="teaching_link sublink">
+							<a href="variables.html">
+								<div>Variables</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-10">
+					<h1>Operator Blocks</h1>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/plus.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul>
+								<li>Name: Addition Arithmetic Block</li>
+								<li>Type: Reporter</li>
+								<li>Description: This block reports the value of the two inputs added together.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/minus.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul>
+								<li>Name: Subtraction Arithmetic Block</li>
+								<li>Type: Reporter</li>
+								<li>Description: This block reports the value of subtraction operation applied to the two inputs.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/times.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul>
+								<li>Name: Multiplication Arithmetic Block</li>
+								<li>Type: Reporter</li>
+								<li>Description: This block reports the value of multiplying the two inputs together.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/divide.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul>
+								<li>Name: Division Arithmetic Block</li>
+								<li>Type: Reporter</li>
+								<li>Description: This block reports the value of dividing the two inputs together.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/power.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul>
+								<li>Name: Exponent Block</li>
+								<li>Type: Reporter</li>
+								<li>
+									Description: This block returns the value of the first input oval raised to the power of the second
+									input oval.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/mod.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul>
+								<li>Name: Modulus Block</li>
+								<li>Type: Reporter</li>
+								<li>
+									Description: This block returns the remainder after division. For example "4 mod 3" would return the
+									value 1.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/round.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul>
+								<li>Name: Rounding Block</li>
+								<li>Type: Reporter</li>
+								<li>Description: The round operator rounds a value to the nearest whole number.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/sqrtof.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul>
+								<li>Name: Operator Block</li>
+								<li>Type: Reporter</li>
+								<li>
+									Description: This block returns the result of the operation applied to the value in the input oval.
+									The operation can be the square root, absolute value, sign, ceiling, floor, square root, sin, cos,
+									tan, asin, acos, atan, Ln, log, lg, e^, 10^x, 2^x, id.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/pickrandom.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul>
+								<li>Name: Pick Random Block</li>
+								<li>Type: Reporter</li>
+								<li>
+									Description: This block returns a whole random number, chosen from between the two values in the
+									default case between 1 and 10.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/lessthan.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul>
+								<li>Name: Less Than Block</li>
+								<li>Type: Comparison</li>
+								<li>
+									Description: This block returns True if the first argument is less than the second argument, or else
+									it returns False.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/equalto.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul>
+								<li>Name: Equal to Block</li>
+								<li>Type: Comparison</li>
+								<li>
+									Description: This block returns True if the two arguments are equal to each other, or else it returns
+									False.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/greaterthan.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul>
+								<li>Name: Greater Than Block</li>
+								<li>Type: Comparison</li>
+								<li>
+									Description: The block returns True if the first argument is larger than the second argument, or else
+									it returns False.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/logicaland.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul>
+								<li>Name:Logical And Block</li>
+								<li>Type: Logical Operator</li>
+								<li>Description: This block returns the result of the logical and operation on the two inputs.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/logicalor.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul>
+								<li>Name: Logical Or Block</li>
+								<li>Type: Logical Operator</li>
+								<li>Description: This block returns the result of the logical or operation on the two inputs.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/logicalnot.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul>
+								<li>Name: Logical Not Block</li>
+								<li>Type: Logical Operator</li>
+								<li>Description: The block returns the result of the logical not operation on the input.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/true.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul>
+								<li>Name: True False Block</li>
+								<li>Type: Comparison</li>
+								<li>
+									Description: The True block always returns True. Slide the switch to False to use the block as false.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/join.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul>
+								<li>Name: Join Block</li>
+								<li>Type: Reporter</li>
+								<li>Description: The Join Block puts two strings together resulting in one string.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/split.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul>
+								<li>Name: Split Block</li>
+								<li>Type: Reporter</li>
+								<li>
+									Description: The split block breaks a string into parts at specific letters or characters. For example
+									breaking "hello world" by " " gives "hello" and "world".
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/letter.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul>
+								<li>Name: Letter Of Block</li>
+								<li>Type: Reporter</li>
+								<li>
+									Description: This block returns the letter of the content input block at the position of the first
+									input oval.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/lengthoftext.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul>
+								<li>Name: Length Of Text Block</li>
+								<li>Type: Reporter</li>
+								<li>Description: This block returns the length of the text in the input block.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/unicodeof.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul>
+								<li>Name: Unicode Of Block</li>
+								<li>Type: Reporter</li>
+								<li>Description: This block returns the unicode value of the input block.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/isanumber.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul>
+								<li>Name: Is A Block</li>
+								<li>Type: Logical Operator</li>
+								<li>
+									Description: This block returns True or False depending on the contents of the input block and the
+									selected operation in the drop down box. Operations include is a number, text, Boolean, list, sprite,
+									costume, sound, command, reporter, or predicate.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/isidenticalto.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul>
+								<li>Name: Is Identical To</li>
+								<li>Type: Logical Operator</li>
+								<li>
+									Description: This block returns True if the contents of both input boxes are identical, or else it
+									returns false.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 align-self-center">
+							<img src="img/javascriptfunction.png" class="smaller" />
+						</div>
+						<div class="col-md-7">
+							<ul>
+								<li>Name: Javascript Function</li>
+								<li>Type: Reporter</li>
+								<li>Description: This block returns a javascript function.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

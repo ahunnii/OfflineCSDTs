@@ -1,0 +1,7 @@
+- Puede abrir más opciones haciendo clic derecho en los bloques.
+- Haga clic derecho en "ir a la cuenta x" y seleccione "duplicar".
+- Vamos a dibujar sobre las cuentas blancas, creando un segundo diamante.
+- Cambie la nueva posición "ir a la cuenta y" a 6.
+- Cambie el nuevo valor de "traducir y" a -6.
+- Cambie las nuevas iteraciones del "triángulo iso" a 7.
+- Esto creará un diamante más pequeño dentro del diamante blanco existente.

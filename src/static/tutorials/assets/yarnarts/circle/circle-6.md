@@ -1,0 +1,3 @@
+- Add in a blue `translate by __ of width` block and use a green math symbol to drop in the multiplication equation in the blank space.
+- On the left side of the multiplication, drop in the brown variable `Radius` and on the right multiply it by 70
+- Add in finally the stamp block to finish off our nested loop

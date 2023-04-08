@@ -1,0 +1,8 @@
+- So far, you only have one stamp. However, the Anishinaabe quilt pattern has multiple parts, creating a radial (circular) design. You can repeat and stamp your sprite onto the stage using a similar heritage algorithm that the Anishinaabe uses in their quilts!
+- Let's use a ![""](./img/repeat.png) block. The block repeats any code that is inside it. It takes one parameter, the number of times to repeat the code.
+- Once you got that, next is to create the radial design. You can create these by using two blocks: ![""](./img/outstamp.png) and ![""](./img/rotatebyxdegrees.png) found in the Pen and Motion categories respectively.
+- The ![""](./img/outstamp.png) block translates the sprite by its height x units (specified by you), stamps at that location, and translates back to its original location.
+- With combining the three blocks, you can stamp from the sprite's origin point and rotate to the next spot.
+- You can figure out rotation by this equation:
+  - **360 / # of times you are repeating the code**
+- Plug that value into ![""](./img/rotatebyxdegrees.png) and you got yourself the start of a radial design!

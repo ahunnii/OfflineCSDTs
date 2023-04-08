@@ -1,0 +1,6 @@
+- We are now going to create some lines.
+- Duplicate the "go to bead x", "go to bead y", "point towards angle" blocks.
+- The y position should be -11 and the angle should be -45 degrees.
+- Update the last brightness block to be 0.
+- Use a "line" block with a bead length of 6.
+- This will create a line of beads that are 6 beads long.

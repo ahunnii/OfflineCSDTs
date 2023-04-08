@@ -1,0 +1,3 @@
+- So far, you have been manipulating what your sprite looks like. Now it is time to stamp your sprite onto the stage, using ![""](./img/stamp.png)
+- Based on the Lakota heritage algorithm, the next block to use is ![""](./img/edgeflip.png) which will allow you to flip your sprite along its edge. While you can have multiple ![""](./img/stamp.png) and ![""](./img/edgeflip.png) blocks, you can actually repeat these blocks using a ![""](./img/repeat.png)
+- Anything inside this block will repeat, given a number of times to repeat. This will allow you to create a ring of diamonds, as well as simplify your code a bit.

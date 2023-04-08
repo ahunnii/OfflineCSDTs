@@ -1,0 +1,4 @@
+- You can change what your sprite looks like! The first thing you can do is change the costume, using ![""](./img/switchcostume.png) Clicking on the block's dropdown menu will allow you to pick from a variety of costumes that are a part of the software.
+- Next, you can change the size of your sprite using ![""](./img/size.png) This changes the size of the sprite based on the original size of costume it is wearing. So, changing the number to a larger number will mean large costumes. Changing it to a smaller number means small costumes.
+- Lastly, you can change the color of your sprite, using ![""](./img/setcoloreffect.png) Think of the color spectrum (ROYGBIV). The block takes a number value from 0 - 100, starting with Red at 0. (You can also change the brightness of the color, the opacity, and saturation with the same effect block).
+- ![""](./img/colorwheel.png)

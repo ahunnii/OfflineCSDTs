@@ -1,0 +1,7 @@
+- Variables are used to hold and manipulate values.
+- We are going to create one to programmatically update our line length.
+- Click on the "Create Variable" button.
+- Give your variable a name. We are going to 'length'.
+- You can find your variable to the left. You can replace the length in the "line" block with the variable.
+- Use the "set variable" block to set an initial value length. Set it to 6.
+- Use the "update variable" block inside the "repeat" block to update the variable by -1 every iteration.

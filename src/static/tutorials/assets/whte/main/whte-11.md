@@ -1,0 +1,5 @@
+- Almost finished! Let's wrap our previous blocks with one more "repeat".
+- Add the last "set" block and "repeat" block to the new "repeat" block. Set the number of iterations to 2.
+- At the bottom of the last "repeat" block, add a "go to bead x" and "go to bead y" block.
+- Set the y position to 11.
+- Hit the green flag to see your finished drawing!

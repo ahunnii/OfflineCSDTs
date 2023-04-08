@@ -1,0 +1,4 @@
+- Change the `wait` from 0.5 seconds to 0 seconds (or just take out the wait blocks). Now it runs super fast. If you like keeping it slow so you can see the algorithm, keep the wait blocks at 0.5 seconds.
+- Change the color using the `set color effect` block (with a range of 0 to 100)
+- Change the tightness using the `translate` block (smaller than 70 is a tighter weave, more than 70 is a looser weave).
+- Change `translate` to 140, `turn` to 30, and `repeat` to 12. You just created the second ring! (30 12 = 360 degrees)
